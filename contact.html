@@ -3,133 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contact | Stephen Lyne</title>
 
   <meta
     name="description"
-    content="Contact Stephen Lyne to discuss web development projects, collaborations, or professional opportunities."
+    content="Contact Stephen Lyne to discuss web development projects, collaborations, graduate roles, or junior front-end opportunities."
   >
 
   <link rel="stylesheet" href="style.css" />
   <script src="nav.js" defer></script>
   <script src="contact.js" defer></script>
 </head>
+
 <body>
 
-  <!-- Header / Navigation -->
-  <header>
-    <nav class="navbar" aria-label="Main navigation">
-      <div class="nav-container">
-        <a href="index.html" class="logo">Stephen Lyne</a>
+<header>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
 
-        <!-- Hamburger toggle (visible on mobile) -->
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-controls="nav-links"
-          aria-expanded="false"
-          aria-label="Toggle navigation menu"
-        >&#9776;</button>
+      <a href="index.html" class="logo">Stephen Lyne</a>
 
-        <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="StephenLyneCV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-          <li><a href="contact.html" aria-current="page">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <main>
-    <section class="contact" aria-labelledby="contact-title">
-      <h1 id="contact-title">Contact</h1>
-
-      <p class="contact-intro">
-        If you'd like to discuss a project, collaboration, or opportunity, feel free to send me a message
-        using the form below.
-      </p>
-
-      <!-- Status messages updated dynamically via contact.js -->
-      <p id="form-status" class="contact-status" role="status" aria-live="polite"></p>
-
-      <!-- novalidate: validation handled in contact.js for consistent UI -->
-      <form
-        id="contact-form"
-        class="contact-form"
-        action="https://formspree.io/f/xvzgbayg"
-        method="POST"
-        novalidate
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-controls="nav-links"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
       >
-        <div class="field">
-          <label for="name">Name <span aria-hidden="true">*</span></label>
-          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="error-name" />
-          <p class="field-error" id="error-name" aria-live="polite"></p>
-        </div>
+        &#9776;
+      </button>
 
-        <div class="field">
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="error-email" />
-          <p class="field-error" id="error-email" aria-live="polite"></p>
-        </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>
+          <a
+            href="StephenLyneCV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CV
+          </a>
+        </li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
 
-        <div class="field">
-          <label for="message">Message <span aria-hidden="true">*</span></label>
-          <textarea id="message" name="message" rows="6" required aria-describedby="error-message"></textarea>
-          <p class="field-error" id="error-message" aria-live="polite"></p>
-        </div>
+    </div>
+  </nav>
+</header>
 
-        <!-- Honeypot -->
+<main>
+  <section class="contact" aria-labelledby="contact-title">
+
+    <h1 id="contact-title">Contact</h1>
+
+    <p class="contact-intro">
+      I'm currently based in Ireland and open to graduate, junior developer,
+      and front-end opportunities across Ireland and the UK.
+    </p>
+
+    <p class="contact-intro">
+      If you'd like to discuss a role, collaboration, freelance project, or
+      software development opportunity, feel free to send me a message below.
+    </p>
+
+    <p id="form-status" class="contact-status" role="status" aria-live="polite"></p>
+
+    <form
+      id="contact-form"
+      class="contact-form"
+      action="https://formspree.io/f/xvzgbayg"
+      method="POST"
+      novalidate
+    >
+
+      <div class="field">
+        <label for="name">Name <span aria-hidden="true">*</span></label>
         <input
+          id="name"
+          name="name"
           type="text"
-          name="_gotcha"
-          class="sr-only"
-          tabindex="-1"
-          autocomplete="off"
-          aria-hidden="true"
+          autocomplete="name"
+          required
+          aria-describedby="error-name"
         >
-
-        <button type="submit" class="btn">
-          Send
-        </button>
-      </form>
-
-      <!-- Embedded external feature (Google Maps) -->
-      <div class="contact-map" aria-label="Map section">
-        <h2 class="contact-map-title">Location</h2>
-
-        <p class="contact-map-text">
-          I'm currently based in the UK. Here's a map for general location context.
-        </p>
-
-        <iframe
-          class="contact-map-frame"
-          title="Map showing central London"
-          src="https://www.google.com/maps?q=London,UK&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-        ></iframe>
+        <p class="field-error" id="error-name" aria-live="polite"></p>
       </div>
 
-      <p class="contact-alt">
-        Prefer links? You can also reach me via
-        <a
-          href="https://www.linkedin.com/in/stephen-lyne-a07414193/"
-          class="contact-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >LinkedIn</a>.
-      </p>
-    </section>
-  </main>
+      <div class="field">
+        <label for="email">Email <span aria-hidden="true">*</span></label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          aria-describedby="error-email"
+        >
+        <p class="field-error" id="error-email" aria-live="polite"></p>
+      </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Stephen Lyne</p>
-  </footer>
+      <div class="field">
+        <label for="message">Message <span aria-hidden="true">*</span></label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          aria-describedby="error-message"
+        ></textarea>
+        <p class="field-error" id="error-message" aria-live="polite"></p>
+      </div>
+
+      <input
+        type="text"
+        name="_gotcha"
+        class="sr-only"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      >
+
+      <button type="submit" class="btn">
+        Send
+      </button>
+
+    </form>
+
+    <div class="contact-map" aria-label="Availability section">
+      <h2 class="contact-map-title">Availability</h2>
+
+      <p class="contact-map-text">
+        Available for graduate software engineering, junior front-end development,
+        web development, and React-focused opportunities. I am open to remote,
+        hybrid, and relocation-based roles across Ireland and the UK.
+      </p>
+    </div>
+
+    <p class="contact-alt">
+      Prefer links? You can also find me on
+      <a
+        href="https://github.com/Stephenlyne62"
+        class="contact-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >GitHub</a>,
+      <a
+        href="https://www.linkedin.com/in/stephen-lyne-a07414193/"
+        class="contact-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >LinkedIn</a>,
+      or download my
+      <a
+        href="StephenLyneCV.pdf"
+        class="contact-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >CV</a>.
+    </p>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Stephen Lyne</p>
+</footer>
 
 </body>
 </html>
