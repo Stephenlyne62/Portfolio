@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects | Stephen Lyne</title>
+
+  <meta
+    name="description"
+    content="Portfolio projects by Stephen Lyne including full-stack web applications, client websites, UI/UX projects, and audio technology research."
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="nav.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">Stephen Lyne</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-controls="nav-links"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        &#9776;
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="Stephen-Lyne-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="projects-page" aria-labelledby="projects-title">
+
+    <div class="page-header">
+      <p class="section-label">Selected Work</p>
+
+      <h1 id="projects-title">Projects</h1>
+
+      <p class="page-intro">
+        A selection of web applications, client projects, UI/UX work, and audio
+        technology research developed through academic, freelance, and personal projects.
+      </p>
+    </div>
+
+    <!-- RESTBOO -->
+
+    <article class="project-card project-card--featured" id="restboo">
+
+      <div class="project-card-content">
+        <p class="project-label">Featured Project</p>
+
+        <h2>RestBoo</h2>
+
+        <p class="project-role">
+          <strong>Role:</strong> Sole Front-End Engineer
+        </p>
+
+        <p>
+          RestBoo is a large-scale restaurant booking and management platform built
+          for customers, restaurant partners, and administrators. I was the sole
+          front-end engineer, responsible for building the user-facing interfaces
+          across the application.
+        </p>
+
+        <p>
+          I developed the front-end for restaurant discovery, reservation workflows,
+          profile management, restaurant administration, booking management, messaging,
+          image uploads, map-based features, analytics dashboards, and role-based user
+          experiences.
+        </p>
+
+        <ul class="project-highlights">
+          <li>Built customer, partner, and administration interfaces</li>
+          <li>Implemented booking, messaging, profile, and dashboard workflows</li>
+          <li>Created complex forms, validation flows, and CRUD interfaces</li>
+          <li>Worked with analytics views, charts, uploads, and map integration</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>REST APIs</span>
+          <span>Authentication</span>
+          <span>CRUD</span>
+          <span>Dashboards</span>
+          <span>Responsive Design</span>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/kot-1999/RestB_FE"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://github.com/kot-1999/RestB_FE#readme"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View README
+          </a>
+        </div>
+      </div>
+
+      <div class="project-image">
+        <img
+          src="img/dashboard.png"
+          alt="RestBoo restaurant booking dashboard"
+        >
+      </div>
+
+    </article>
+
+    <!-- PROJECT GRID -->
+
+    <div class="projects-grid">
+
+      <!-- WORLD CUP PREDICTOR -->
+
+      <article class="project-card">
+
+        <img
+          src="img/WorldCupPredictor.png"
+          alt="World Cup Predictor application homepage"
+        >
+
+        <div class="project-card-content">
+          <h2>World Cup Predictor</h2>
+
+          <p class="project-role">
+            <strong>Role:</strong> Designer &amp; Developer
+          </p>
+
+          <p>
+            A custom tournament prediction platform built for a private football
+            competition. Users can submit fixture predictions, make outright tournament
+            picks, view leaderboards, and compete through an automated scoring system.
+          </p>
+
+          <p>
+            The project was created to replace manual spreadsheet-based scoring with
+            a dedicated web application featuring admin tools, prediction locking,
+            scoring logic, and dynamic rankings.
+          </p>
+
+          <div class="project-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Vercel</span>
+            <span>Authentication</span>
+            <span>Leaderboards</span>
+            <span>Admin Tools</span>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://world-cup-predictor-red-omega.vercel.app/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/Stephenlyne62/world-cup-predictor"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- MOVIE MATCH -->
+
+      <article class="project-card">
+
+        <img
+          src="img/MovieMatch.png"
+          alt="Movie Match mood-based movie discovery homepage"
+        >
+
+        <div class="project-card-content">
+          <h2>Movie Match</h2>
+
+          <p class="project-role">
+            <strong>Role:</strong> Designer &amp; Developer
+          </p>
+
+          <p>
+            Movie Match is a mood-based movie discovery website designed around
+            emotion-led browsing rather than traditional genre filtering. The application
+            helps users find films through curated weekly recommendations and mood-based
+            selections.
+          </p>
+
+          <p>
+            The project includes catalogue browsing, filtering, watchlist functionality,
+            archive-style selections, and integration with movie data to create a more
+            editorial discovery experience.
+          </p>
+
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>TMDB API</span>
+            <span>UI/UX Design</span>
+            <span>Responsive Design</span>
+            <span>Watchlist</span>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://stephenlyne62.github.io/movieMatch"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/Stephenlyne62/movieMatch"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- EMERALD EATS -->
+
+      <article class="project-card">
+
+        <img
+          src="img/EmeraldEatsWebsite.png"
+          alt="Emerald Eats food truck website services section"
+        >
+
+        <div class="project-card-content">
+          <h2>Emerald Eats</h2>
+
+          <p class="project-role">
+            <strong>Role:</strong> Freelance Web Developer
+          </p>
+
+          <p>
+            A freelance website project developed for a food truck business to improve
+            online visibility, present services clearly, and make key information such
+            as menus, locations, contact details, and customer actions easy to access.
+          </p>
+
+          <p>
+            The site was built with a focus on responsive design, accessible navigation,
+            clear content structure, and a distinctive visual identity for the business.
+          </p>
+
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Accessibility</span>
+            <span>Responsive Design</span>
+            <span>Client Work</span>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://emeraldeats.co.uk/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Site
+            </a>
+            <a
+              href="https://github.com/Stephenlyne62/emeatsupdated"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- OSCILLATOR SYNTHESISER RESEARCH -->
+
+      <article class="project-card project-card--text">
+
+        <div class="project-card-content">
+          <h2>Oscillator Synthesiser Research</h2>
+
+          <p class="project-role">
+            <strong>Role:</strong> Researcher &amp; Developer
+          </p>
+
+          <p>
+            My MSc thesis project explores audio synthesis and digital signal processing
+            through a comparative study of software synthesiser architectures in C++.
+          </p>
+
+          <p>
+            The project involves developing two oscillator-based synthesisers, designing
+            an A/B testing process, and evaluating the systems through technical analysis
+            and user feedback.
+          </p>
+
+          <div class="project-tags">
+            <span>C++</span>
+            <span>DSP</span>
+            <span>Audio Programming</span>
+            <span>A/B Testing</span>
+            <span>User Evaluation</span>
+            <span>Research</span>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Stephen Lyne</p>
+</footer>
+
+</body>
+</html>

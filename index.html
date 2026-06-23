@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Stephen Lyne | Front-End Developer</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Stephen Lyne, a front-end developer and MSc Web Development student building accessible web applications, digital products, and audio technology projects."
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="nav.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-container">
+
+        <a href="index.html" class="logo">Stephen Lyne</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >&#9776;</button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="Stephen-Lyne-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero hero--center" aria-labelledby="hero-title">
+
+      <p class="eyebrow">Front-End Developer · MSc Web Development</p>
+
+      <h1 id="hero-title">Stephen Lyne</h1>
+
+      <p>
+        I build accessible web applications, digital products, and audio technology
+        projects. My work combines front-end development, user-centred design, and
+        a background in Music Production.
+      </p>
+
+      <ul class="hero-tags" aria-label="Core technologies">
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
+        <li>C++ Audio</li>
+        <li>Accessibility</li>
+      </ul>
+
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="Stephen-Lyne-CV.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
+        <a href="contact.html" class="btn">Contact Me</a>
+      </div>
+
+    </section>
+
+    <section class="featured-project" aria-labelledby="featured-title">
+
+      <p class="eyebrow">Featured Project</p>
+
+      <h2 id="featured-title">RestBoo</h2>
+
+      <p class="featured-subtitle">
+        Restaurant Booking &amp; Management Platform
+      </p>
+
+      <p>
+        A large-scale booking platform developed for customers, restaurant partners,
+        and administrators. The application supports restaurant discovery, reservation
+        management, profile management, analytics dashboards, messaging, image uploads,
+        maps, and role-based workflows.
+      </p>
+
+      <ul class="project-meta">
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>REST APIs</li>
+        <li>Authentication</li>
+        <li>Role-Based Access</li>
+        <li>CRUD</li>
+        <li>Dashboards</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="projects.html#restboo" class="btn">View Case Study</a>
+      </div>
+
+    </section>
+
+    <section class="home-projects" aria-labelledby="projects-preview-title">
+
+      <p class="eyebrow">Selected Work</p>
+
+      <h2 id="projects-preview-title">More Projects</h2>
+
+      <div class="home-project-grid">
+
+        <article class="mini-project-card">
+          <h3>Oscillator Synthesiser Research</h3>
+          <p>
+            MSc thesis project comparing two oscillator synthesis techniques through
+            custom C++ audio software and user evaluation.
+          </p>
+          <ul class="project-meta">
+            <li>C++</li>
+            <li>Audio Programming</li>
+            <li>A/B Testing</li>
+          </ul>
+        </article>
+
+        <article class="mini-project-card">
+          <h3>World Cup Predictor</h3>
+          <p>
+            Custom tournament prediction platform with automated scoring, leaderboards,
+            admin tools, and dynamic ranking systems.
+          </p>
+          <ul class="project-meta">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Database Design</li>
+          </ul>
+        </article>
+
+        <article class="mini-project-card">
+          <h3>Movie Match</h3>
+          <p>
+            Mood-based movie discovery platform designed around user emotion,
+            curated selections, and clean visual design.
+          </p>
+          <ul class="project-meta">
+            <li>UI/UX</li>
+            <li>API Integration</li>
+            <li>Responsive Design</li>
+          </ul>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Stephen Lyne</p>
+  </footer>
+
+</body>
+</html>
