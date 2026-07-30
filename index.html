@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Portfolio of Stephen Lyne, a front-end developer and MSc Web Development student building accessible web applications, digital products, and audio technology projects."
+    content="Portfolio of Stephen Lyne, a front-end developer and MSc Web Development student building accessible web applications, full-stack products, and audio technology projects."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -29,13 +29,25 @@
           aria-controls="nav-links"
           aria-expanded="false"
           aria-label="Toggle navigation menu"
-        >&#9776;</button>
+        >
+          &#9776;
+        </button>
 
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="StephenLyneCV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+
+          <li>
+            <a
+              href="StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
+          </li>
+
           <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -45,35 +57,76 @@
 
   <main>
 
-    <section class="hero hero--center" aria-labelledby="hero-title">
+    <!-- ==================================================
+         HERO
+         ================================================== -->
 
-      <p class="eyebrow">Front-End Developer · MSc Web Development</p>
+    <section
+      class="hero hero--center"
+      aria-labelledby="hero-title"
+    >
+
+      <p class="eyebrow">
+        Front-End Developer · MSc Web Development
+      </p>
 
       <h1 id="hero-title">Stephen Lyne</h1>
 
       <p>
-        I build accessible web applications, digital products, and audio technology
-        projects. My work combines front-end development, user-centred design, and
-        a background in Music Production.
+        I build accessible web applications with a focus on front-end
+        engineering, modern web technologies, and user-centred design.
+        Alongside web development, I explore audio software through C++
+        and digital signal processing.
       </p>
 
-      <ul class="hero-tags" aria-label="Core technologies">
+      <ul
+        class="hero-tags"
+        aria-label="Core technologies and areas of focus"
+      >
         <li>React</li>
         <li>TypeScript</li>
         <li>JavaScript</li>
+        <li>Next.js</li>
         <li>C++ Audio</li>
         <li>Accessibility</li>
       </ul>
 
       <div class="hero-buttons">
-        <a href="projects.html" class="btn">View Projects</a>
-        <a href="StephenLyneCV.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
-        <a href="contact.html" class="btn">Contact Me</a>
+
+        <a href="projects.html" class="btn">
+          View Projects
+        </a>
+
+        <a
+          href="StephenLyneCV.pdf"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
+
+        <a href="contact.html" class="btn">
+          Contact Me
+        </a>
+
       </div>
+
+      <p class="hero-availability">
+        MSc Web Development · Available for graduate and junior software
+        engineering opportunities
+      </p>
 
     </section>
 
-    <section class="featured-project" aria-labelledby="featured-title">
+    <!-- ==================================================
+         FEATURED PROJECT
+         ================================================== -->
+
+    <section
+      class="featured-project"
+      aria-labelledby="featured-title"
+    >
 
       <p class="eyebrow">Featured Project</p>
 
@@ -84,29 +137,43 @@
       </p>
 
       <p>
-        A large-scale booking platform developed for customers, restaurant partners,
-        and administrators. The application supports restaurant discovery, reservation
-        management, profile management, analytics dashboards, messaging, image uploads,
-        maps, and role-based workflows.
+        RestBoo is a restaurant booking and management platform supporting
+        customers, restaurant partners, staff, and administrators through
+        role-based workflows. I delivered the complete front-end
+        implementation, building booking, restaurant management, messaging,
+        analytics, and profile experiences while integrating REST APIs and
+        authentication.
       </p>
 
-      <ul class="project-meta">
-        <li>React</li>
-        <li>TypeScript</li>
+      <ul
+        class="project-meta"
+        aria-label="Technologies used for RestBoo"
+      >
+        <li>Pug</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Mustache.js</li>
+        <li>Chart.js</li>
         <li>REST APIs</li>
         <li>Authentication</li>
-        <li>Role-Based Access</li>
-        <li>CRUD</li>
-        <li>Dashboards</li>
       </ul>
 
       <div class="project-links">
-        <a href="projects.html#restboo" class="btn">View Case Study</a>
+        <a href="projects/restboo.html" class="btn">
+          View Case Study
+        </a>
       </div>
 
     </section>
 
-    <section class="home-projects" aria-labelledby="projects-preview-title">
+    <!-- ==================================================
+         MORE PROJECTS
+         ================================================== -->
+
+    <section
+      class="home-projects"
+      aria-labelledby="projects-preview-title"
+    >
 
       <p class="eyebrow">Selected Work</p>
 
@@ -114,43 +181,95 @@
 
       <div class="home-project-grid">
 
+        <!-- EDUCATIONAL SOFTWARE SYNTHESIZER -->
+
         <article class="mini-project-card">
-          <h3>Oscillator Synthesiser Research</h3>
+
+          <h3>Educational Software Synthesizer</h3>
+
           <p>
-            MSc thesis project comparing two oscillator synthesis techniques through
-            custom C++ audio software and user evaluation.
+            MSc thesis exploring whether a goal-oriented synthesizer interface can make sound design more accessible to novice users using two interfaces built on a shared C++ DSP engine.
           </p>
-          <ul class="project-meta">
+
+          <ul
+            class="project-meta"
+            aria-label="Technologies used for the synthesizer project"
+          >
             <li>C++</li>
+            <li>DSP</li>
             <li>Audio Programming</li>
-            <li>A/B Testing</li>
+            <li>HCI</li>
+            <li>User Testing</li>
           </ul>
+
+          <div class="project-links">
+            <a href="projects/synth-thesis.html" class="btn">
+              View Case Study
+            </a>
+          </div>
+
         </article>
 
+        <!-- WORLD CUP PREDICTOR -->
+
         <article class="mini-project-card">
+
           <h3>World Cup Predictor</h3>
+
           <p>
-            Custom tournament prediction platform with automated scoring, leaderboards,
-            admin tools, and dynamic ranking systems.
+            Full-stack tournament prediction platform with authentication,
+            automated scoring, live leaderboards, fixture administration,
+            prediction locking, and database-backed persistence.
           </p>
-          <ul class="project-meta">
-            <li>React</li>
+
+          <ul
+            class="project-meta"
+            aria-label="Technologies used for World Cup Predictor"
+          >
+            <li>Next.js</li>
             <li>TypeScript</li>
-            <li>Database Design</li>
+            <li>React</li>
+            <li>Supabase</li>
+            <li>PostgreSQL</li>
           </ul>
+
+          <div class="project-links">
+            <a href="projects/world-cup-predictor.html" class="btn">
+              View Case Study
+            </a>
+          </div>
+
         </article>
 
+        <!-- MOVIE MATCH -->
+
         <article class="mini-project-card">
+
           <h3>Movie Match</h3>
+
           <p>
-            Mood-based movie discovery platform designed around user emotion,
-            curated selections, and clean visual design.
+            React application integrating the TMDB API to deliver mood-based
+            recommendations, dynamic search, detailed movie pages, trailers,
+            cast information, and persistent watchlists.
           </p>
-          <ul class="project-meta">
-            <li>UI/UX</li>
-            <li>API Integration</li>
-            <li>Responsive Design</li>
+
+          <ul
+            class="project-meta"
+            aria-label="Technologies used for Movie Match"
+          >
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>TMDB API</li>
+            <li>React Router</li>
+            <li>LocalStorage</li>
           </ul>
+
+          <div class="project-links">
+            <a href="projects/movie-match.html" class="btn">
+              View Case Study
+            </a>
+          </div>
+
         </article>
 
       </div>
@@ -160,7 +279,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Stephen Lyne</p>
+    <p>&copy; 2026 Stephen Lyne</p>
   </footer>
 
 </body>

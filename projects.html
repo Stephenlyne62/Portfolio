@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Projects | Stephen Lyne</title>
 
   <meta
     name="description"
-    content="Projects by Stephen Lyne, including React, Next.js, JavaScript, TypeScript, API-driven platforms, client websites, and product-focused web applications."
+    content="Software engineering projects by Stephen Lyne, including React, Next.js, TypeScript, Supabase, PostgreSQL, C++, DSP, API-driven products, and commercial client work."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -20,6 +24,7 @@
 <header>
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
+
       <a href="index.html" class="logo">Stephen Lyne</a>
 
       <button
@@ -35,147 +40,570 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" aria-current="page">Projects</a></li>
-        <li><a href="StephenLyneCV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+
+        <li>
+          <a href="projects.html" aria-current="page">
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="StephenLyneCV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CV
+          </a>
+        </li>
+
         <li><a href="contact.html">Contact</a></li>
       </ul>
+
     </div>
   </nav>
 </header>
 
 <main>
 
-  <section class="projects-page" aria-labelledby="projects-title">
+  <section
+    class="projects-page"
+    aria-labelledby="projects-title"
+  >
 
     <div class="page-header">
+
       <p class="section-label">Selected Work</p>
 
       <h1 id="projects-title">Projects</h1>
 
       <p class="page-intro">
-        A selection of product-focused web applications, client websites, and technical projects
-        built through academic, freelance, and self-directed work. I enjoy identifying real-world
-        problems and turning them into useful, polished digital products.
+        Team, academic, freelance, and self-directed software projects
+        demonstrating front-end ownership, full-stack development,
+        API integration, database design, responsive interfaces, and
+        user-centred product development.
       </p>
+
     </div>
-
-    <!-- RESTBOO -->
-
-    <article class="project-card project-card--featured" id="restboo">
-
-      <div class="project-card-content">
-        <p class="project-label">Featured Project</p>
-
-        <h2>RestBoo</h2>
-
-        <p class="project-role">
-          <strong>Role:</strong> Lead Front-End Engineer
-        </p>
-
-        <p>
-          RestBoo is a large-scale restaurant booking and management platform built for
-          customers, restaurant partners, staff, and administrators. I built and owned the
-          complete front-end experience, working within a multi-developer team while taking
-          responsibility for the user-facing side of the application.
-        </p>
-
-        <p>
-          The platform includes restaurant discovery, booking flows, profile management,
-          dashboards, messaging, image uploads, map-based features, authentication, and
-          role-based interfaces. My focus was on creating clear user journeys across a
-          complex multi-role product.
-        </p>
-
-        <ul class="project-highlights">
-          <li>Built customer, restaurant partner, staff, and administrator interfaces</li>
-          <li>Implemented booking, messaging, profile, dashboard, and administration workflows</li>
-          <li>Integrated REST APIs, authentication, image uploads, and map-based functionality</li>
-          <li>Designed responsive, role-based user experiences across the platform</li>
-        </ul>
-
-        <div class="project-tags">
-          <span>Pug</span>
-          <span>JavaScript</span>
-          <span>CSS</span>
-          <span>REST APIs</span>
-          <span>Authentication</span>
-          <span>LocalStorage</span>
-          <span>Responsive Design</span>
-        </div>
-
-        <div class="project-links">
-          <a
-            href="https://github.com/kot-1999/RestB_FE"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://github.com/kot-1999/RestB_FE#readme"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View README
-          </a>
-        </div>
-      </div>
-
-      <div class="project-image">
-        <img
-          src="img/dashboard.png"
-          alt="RestBoo restaurant booking dashboard"
-        >
-      </div>
-
-    </article>
-
-    <!-- PROJECT GRID -->
 
     <div class="projects-grid">
 
-      <!-- WORLD CUP PREDICTOR -->
+    <article
+  class="project-card project-card--featured project-card--stacked"
+  id="restboo"
+>
 
-      <article class="project-card">
+  <div
+    class="project-gallery project-gallery--featured"
+    aria-label="RestBoo interface screenshots"
+  >
 
+    <a
+      href="projects/restboo.html"
+      class="project-gallery-main project-media-link"
+      aria-label="View the RestBoo case study"
+    >
+      <img
+        src="img/restboo-dashboard.png"
+        alt="RestBoo restaurant analytics dashboard"
+      >
+
+      <span class="project-image-caption">
+        Analytics dashboard
+      </span>
+    </a>
+
+    <div class="project-gallery-grid">
+
+      <a
+        href="projects/restboo.html"
+        class="project-gallery-item project-media-link"
+        aria-label="View RestBoo restaurant discovery interface"
+      >
         <img
-          src="img/WorldCupPredictor.png"
-          alt="World Cup Predictor application homepage"
+          src="img/restboo-discovery.png"
+          alt="RestBoo restaurant search and discovery interface"
         >
 
+        <span class="project-image-caption">
+          Restaurant discovery
+        </span>
+      </a>
+
+      <a
+        href="projects/restboo.html"
+        class="project-gallery-item project-media-link"
+        aria-label="View RestBoo booking management interface"
+      >
+        <img
+          src="img/restboo-bookings.png"
+          alt="RestBoo booking management and messaging interface"
+        >
+
+        <span class="project-image-caption">
+          Bookings and messaging
+        </span>
+      </a>
+
+      <a
+        href="projects/restboo.html"
+        class="project-gallery-item project-media-link"
+        aria-label="View RestBoo restaurant management interface"
+      >
+        <img
+          src="img/restboo-editor.png"
+          alt="RestBoo restaurant administration and editing interface"
+        >
+
+        <span class="project-image-caption">
+          Restaurant administration
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="project-card-content">
+
+    <p class="project-label">Featured Project</p>
+
+    <h2>RestBoo</h2>
+
+    <div
+      class="project-meta"
+      aria-label="RestBoo project information"
+    >
+      <span>2026</span>
+      <span>Team Project</span>
+      <span>Restaurant Platform</span>
+      <span>Front-End Ownership</span>
+    </div>
+
+    <div class="project-detail">
+      <p class="project-detail-label">My contribution</p>
+
+      <p>
+Complete front-end implementation within the project team, covering customer, restaurant partner, staff, and administrator experiences.      </p>
+    </div>
+
+    <p class="project-summary">
+      RestBoo is a restaurant booking and management platform
+      supporting four distinct user roles through booking workflows,
+      messaging, profiles, analytics dashboards, restaurant
+      administration, and role-based navigation.
+    </p>
+
+    <div class="project-decision">
+      <p class="project-detail-label">Engineering decision</p>
+
+      <p>
+        Used Mustache.js alongside Pug templates to render dynamic,
+        API-driven interfaces while working within the team’s
+        existing front-end architecture.
+      </p>
+    </div>
+
+    <ul class="project-highlights">
+      <li>
+        Delivered the complete front end across four user roles
+      </li>
+
+      <li>
+        Built booking, messaging, dashboard, profile, and
+        administration workflows
+      </li>
+
+      <li>
+        Integrated REST APIs, authentication, image uploads, and
+        map-based functionality
+      </li>
+
+      <li>
+        Collaborated through Git and GitHub with a five-person
+        development team
+      </li>
+    </ul>
+
+    <div
+      class="project-tags"
+      aria-label="Technologies used for RestBoo"
+    >
+      <span>Pug</span>
+      <span>JavaScript</span>
+      <span>jQuery</span>
+      <span>Mustache.js</span>
+      <span>Chart.js</span>
+      <span>REST APIs</span>
+      <span>Authentication</span>
+      <span>Git</span>
+    </div>
+
+    <div class="project-links">
+
+      <a
+        href="projects/restboo.html"
+        class="btn"
+      >
+        View Case Study
+      </a>
+
+      <a
+        href="https://github.com/kot-1999/RestB_FE"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+    </div>
+
+    <p class="project-repository-note">
+      Team repository. I owned the front-end implementation.
+    </p>
+
+  </div>
+
+</article>
+      <!-- ==================================================
+           MSC THESIS
+           ================================================== -->
+
+      <article
+        class="project-card project-card--priority"
+        id="synth-thesis"
+      >
+
+        <div
+          class="project-gallery project-gallery--card"
+          aria-label="Educational Software Synthesizer screenshots"
+        >
+
+          <a
+            href="projects/synth-thesis.html"
+            class="project-gallery-main project-media-link"
+            aria-label="View the Educational Software Synthesizer case study"
+          >
+            <img
+              src="img/thesis-educational-interface.png"
+              alt="Educational goal-oriented software synthesizer interface"
+            >
+
+            <span class="project-image-caption">
+              Educational interface
+            </span>
+          </a>
+
+          <div class="project-gallery-grid">
+
+            <a
+              href="projects/synth-thesis.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View the conventional synthesizer interface"
+            >
+              <img
+                src="img/thesis-conventional-interface.png"
+                alt="Conventional software synthesizer interface"
+              >
+
+              <span class="project-image-caption">
+                Conventional interface
+              </span>
+            </a>
+
+            <a
+              href="projects/synth-thesis.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View the shared DSP architecture"
+            >
+              <img
+                src="img/thesis-shared-engine-architecture.png"
+                alt="Architecture diagram showing two interfaces using a shared C++ DSP engine"
+              >
+
+              <span class="project-image-caption">
+                Shared DSP engine
+              </span>
+            </a>
+
+            <a
+              href="projects/synth-thesis.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View the user evaluation design"
+            >
+              <img
+                src="img/thesis-user-evaluation.png"
+                alt="Diagram showing the synthesizer usability evaluation process"
+              >
+
+              <span class="project-image-caption">
+                User evaluation
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+
         <div class="project-card-content">
-          <h2>World Cup Predictor</h2>
 
-          <p class="project-role">
-            <strong>Role:</strong> Designer &amp; Developer
+          <p class="project-label">MSc Thesis</p>
+
+          <h2>Educational Software Synthesizer</h2>
+
+          <div
+            class="project-meta"
+            aria-label="Educational Software Synthesizer project information"
+          >
+            <span>2026</span>
+            <span>MSc Thesis</span>
+            <span>Individual Project</span>
+            <span>C++ &amp; DSP</span>
+          </div>
+
+          <div class="project-detail">
+            <p class="project-detail-label">My contribution</p>
+
+            <p>
+              Research, software architecture, C++ development, DSP
+              implementation, interface design, usability testing, and
+              evaluation.
+            </p>
+          </div>
+
+          <p class="project-summary">
+            A C++ audio application investigating whether a
+            goal-oriented synthesizer interface can make sound design
+            more accessible to novice users without reducing
+            functionality.
           </p>
 
-          <p>
-            World Cup Predictor is a tournament prediction platform I designed, built,
-            and deployed to replace a manual spreadsheet and group chat process for a
-            private football competition.
-          </p>
+          <div class="project-decision">
+            <p class="project-detail-label">Engineering decision</p>
 
-          <p>
-            Users can submit fixture predictions, make outright tournament selections,
-            track scores, and compete through automated leaderboards. The project turned
-            a messy manual process into a dedicated web application with admin tools,
-            scoring logic, and dynamic rankings.
-          </p>
+            <p>
+              Used one shared DSP engine across both interface variants
+              so usability differences could be attributed to interface
+              design rather than differences in audio generation.
+            </p>
+          </div>
 
-          <div class="project-tags">
-            <span>Next.js</span>
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>CSS</span>
-            <span>Vercel</span>
-            <span>Leaderboards</span>
-            <span>Admin Tools</span>
+          <ul class="project-highlights project-highlights--compact">
+            <li>
+              Developed two functionally equivalent synthesizer interfaces
+            </li>
+
+            <li>
+              Built a shared object-oriented C++ and DSP engine
+            </li>
+
+            <li>
+              Applied HCI principles to an educational software product
+            </li>
+
+            <li>
+              Designed controlled testing with novice users
+            </li>
+          </ul>
+
+          <div
+            class="project-tags"
+            aria-label="Technologies used for the synthesizer project"
+          >
+            <span>C++</span>
+            <span>DSP</span>
+            <span>OOP</span>
+            <span>Audio Programming</span>
+            <span>HCI</span>
+            <span>User Testing</span>
           </div>
 
           <div class="project-links">
+
+            <a
+              href="projects/synth-thesis.html"
+              class="btn"
+            >
+              View Case Study
+            </a>
+
+            <a
+              href="https://github.com/Stephenlyne62/educational-software-synthesiser"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- ==================================================
+           WORLD CUP PREDICTOR
+           ================================================== -->
+
+      <article
+        class="project-card"
+        id="world-cup-predictor"
+      >
+
+        <div
+          class="project-gallery project-gallery--card"
+          aria-label="World Cup Predictor screenshots"
+        >
+
+          <a
+            href="projects/world-cup-predictor.html"
+            class="project-gallery-main project-media-link"
+            aria-label="View the World Cup Predictor case study"
+          >
+            <img
+              src="img/world-cup-home.png"
+              alt="World Cup Predictor homepage"
+            >
+
+            <span class="project-image-caption">
+              Competition homepage
+            </span>
+          </a>
+
+          <div class="project-gallery-grid">
+
+            <a
+              href="projects/world-cup-predictor.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View the prediction fixtures interface"
+            >
+              <img
+                src="img/world-cup-fixtures.png"
+                alt="World Cup Predictor fixture prediction cards"
+              >
+
+              <span class="project-image-caption">
+                Fixture predictions
+              </span>
+            </a>
+
+            <a
+              href="projects/world-cup-predictor.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View the competition leaderboard"
+            >
+              <img
+                src="img/world-cup-leaderboard.png"
+                alt="World Cup Predictor live leaderboard"
+              >
+
+              <span class="project-image-caption">
+                Live leaderboard
+              </span>
+            </a>
+
+            <a
+              href="projects/world-cup-predictor.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View the outright prediction form"
+            >
+              <img
+                src="img/world-cup-outrights.png"
+                alt="World Cup Predictor tournament outright predictions"
+              >
+
+              <span class="project-image-caption">
+                Outright predictions
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="project-card-content">
+
+          <h2>World Cup Predictor</h2>
+
+          <div
+            class="project-meta"
+            aria-label="World Cup Predictor project information"
+          >
+            <span>2026</span>
+            <span>Live</span>
+            <span>Solo Project</span>
+            <span>Full Stack</span>
+          </div>
+
+          <div class="project-detail">
+            <p class="project-detail-label">My contribution</p>
+
+            <p>
+              Product design, front-end development, authentication,
+              database design, scoring logic, administration tools, and
+              production deployment.
+            </p>
+          </div>
+
+          <p class="project-summary">
+            A full-stack tournament prediction platform used by
+            21 participants, replacing manual spreadsheet scoring and
+            group-chat submissions across 104 fixtures.
+          </p>
+
+          <div class="project-decision">
+            <p class="project-detail-label">Engineering decision</p>
+
+            <p>
+              Used Supabase to combine authentication and
+              PostgreSQL-backed persistence while keeping the Next.js
+              application straightforward to deploy through Vercel.
+            </p>
+          </div>
+
+          <ul class="project-highlights project-highlights--compact">
+            <li>
+              Automated scoring and leaderboard calculations across
+              104 fixtures
+            </li>
+
+            <li>
+              Implemented user authentication and saved predictions
+            </li>
+
+            <li>
+              Locked predictions automatically at fixture kick-off
+            </li>
+
+            <li>
+              Built administration tools for fixtures and results
+            </li>
+          </ul>
+
+          <div
+            class="project-tags"
+            aria-label="Technologies used for World Cup Predictor"
+          >
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Supabase</span>
+            <span>PostgreSQL</span>
+            <span>Authentication</span>
+            <span>React</span>
+            <span>Vercel</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="projects/world-cup-predictor.html"
+              class="btn"
+            >
+              View Case Study
+            </a>
+
             <a
               href="https://world-cup-predictor-red-omega.vercel.app/"
               class="btn"
@@ -184,121 +612,118 @@
             >
               Live Demo
             </a>
-            <a
-              href="https://github.com/Stephenlyne62/world-cup-predictor"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
+
           </div>
+
         </div>
 
       </article>
 
-      <!-- MOVIE MATCH -->
+      <!-- ==================================================
+           EMERALD EATS
+           ================================================== -->
 
-      <article class="project-card">
+      <article
+        class="project-card"
+        id="emerald-eats"
+      >
 
-        <img
-          src="img/MovieMatch.png"
-          alt="Movie Match mood-based movie discovery homepage"
-        >
+        <div class="project-media project-media--single">
 
-        <div class="project-card-content">
-          <h2>Movie Match</h2>
-
-          <p class="project-role">
-            <strong>Role:</strong> Designer &amp; Developer
-          </p>
-
-          <p>
-            Movie Match is a mood-based movie discovery platform designed to reduce
-            decision fatigue. Instead of forcing users to scroll through large streaming
-            catalogues, the application helps people choose films based on how they feel.
-          </p>
-
-          <p>
-            The current version is a live MVP that demonstrates the core experience:
-            mood-based recommendations, archive browsing, search, filtering, detailed
-            movie pages, trailers, and a persistent watchlist. The longer-term product
-            vision is a curated weekly recommendation service, with future expansion into
-            music recommendations and short-form social content to build an engaged
-            discovery community.
-          </p>
-
-          <div class="project-tags">
-            <span>React</span>
-            <span>Vite</span>
-            <span>JavaScript</span>
-            <span>TMDB API</span>
-            <span>React Router</span>
-            <span>Context API</span>
-            <span>LocalStorage</span>
-            <span>UI/UX Design</span>
-          </div>
-
-          <div class="project-links">
-            <a
-              href="https://stephenlyne62.github.io/movieMatch"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
+          <a
+            href="projects/emerald-eats.html"
+            class="project-media-link"
+            aria-label="View the Emerald Eats case study"
+          >
+            <img
+              src="img/emerald-eats-website.png"
+              alt="Emerald Eats food truck and catering website"
             >
-              Live Demo
-            </a>
-            <a
-              href="https://github.com/Stephenlyne62/movieMatch"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </div>
+          </a>
+
         </div>
 
-      </article>
-
-      <!-- EMERALD EATS -->
-
-      <article class="project-card">
-
-        <img
-          src="img/EmeraldEatsWebsite.png"
-          alt="Emerald Eats food truck website services section"
-        >
-
         <div class="project-card-content">
+
           <h2>Emerald Eats</h2>
 
-          <p class="project-role">
-            <strong>Role:</strong> Freelance Web Developer
+          <div
+            class="project-meta"
+            aria-label="Emerald Eats project information"
+          >
+            <span>2025</span>
+            <span>Live</span>
+            <span>Client Project</span>
+            <span>Commercial Website</span>
+          </div>
+
+          <div class="project-detail">
+            <p class="project-detail-label">My contribution</p>
+
+            <p>
+              Client communication, requirements gathering, interface
+              design, front-end development, deployment, and ongoing
+              maintenance.
+            </p>
+          </div>
+
+          <p class="project-summary">
+            A responsive commercial website designed and delivered for
+            a London food truck and catering business, presenting its
+            services, menus, media, merchandise, and contact information.
           </p>
 
-          <p>
-            Emerald Eats is a freelance website project developed for a food truck
-            business to improve online visibility, present services clearly, and make
-            important information easy for customers to access.
-          </p>
+          <div class="project-decision">
+            <p class="project-detail-label">Engineering decision</p>
 
-          <p>
-            I worked on the site from planning through deployment, focusing on responsive
-            layouts, accessible navigation, clear content structure, and a visual identity
-            that reflected the business.
-          </p>
+            <p>
+              Used Bootstrap and reusable front-end components to
+              accelerate responsive development while keeping future
+              client updates straightforward.
+            </p>
+          </div>
 
-          <div class="project-tags">
+          <ul class="project-highlights project-highlights--compact">
+            <li>
+              Delivered and deployed one live commercial client website
+            </li>
+
+            <li>
+              Built menu, service, gallery, video, merchandise, and
+              contact sections
+            </li>
+
+            <li>
+              Improved mobile navigation and responsive behaviour
+            </li>
+
+            <li>
+              Continued maintaining the website after launch
+            </li>
+          </ul>
+
+          <div
+            class="project-tags"
+            aria-label="Technologies used for Emerald Eats"
+          >
             <span>HTML5</span>
             <span>CSS3</span>
             <span>JavaScript</span>
+            <span>Bootstrap</span>
             <span>Responsive Design</span>
             <span>Accessibility</span>
             <span>Client Work</span>
           </div>
 
           <div class="project-links">
+
+            <a
+              href="projects/emerald-eats.html"
+              class="btn"
+            >
+              View Case Study
+            </a>
+
             <a
               href="https://emeraldeats.co.uk/"
               class="btn"
@@ -307,49 +732,184 @@
             >
               Live Site
             </a>
-            <a
-              href="https://github.com/Stephenlyne62/emeatsupdated"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
+
           </div>
+
         </div>
 
       </article>
 
-      <!-- OSCILLATOR SYNTHESISER RESEARCH -->
+      <!-- ==================================================
+           MOVIE MATCH
+           ================================================== -->
 
-      <article class="project-card project-card--text">
+      <article
+        class="project-card"
+        id="movie-match"
+      >
+
+        <div
+          class="project-gallery project-gallery--card"
+          aria-label="Movie Match screenshots"
+        >
+
+          <a
+            href="projects/movie-match.html"
+            class="project-gallery-main project-media-link"
+            aria-label="View the Movie Match case study"
+          >
+            <img
+              src="img/movie-match-featured.png"
+              alt="Movie Match featured Matrix recommendation"
+            >
+
+            <span class="project-image-caption">
+              Featured recommendation
+            </span>
+          </a>
+
+          <div class="project-gallery-grid">
+
+            <a
+              href="projects/movie-match.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View Movie Match weekly recommendations"
+            >
+              <img
+                src="img/movie-match-weekly-picks.png"
+                alt="Movie Match weekly mood recommendations"
+              >
+
+              <span class="project-image-caption">
+                Weekly mood picks
+              </span>
+            </a>
+
+            <a
+              href="projects/movie-match.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View a Movie Match detail page"
+            >
+              <img
+                src="img/movie-match-details.png"
+                alt="Movie Match detailed movie page with cast and production information"
+              >
+
+              <span class="project-image-caption">
+                Movie details
+              </span>
+            </a>
+
+            <a
+              href="projects/movie-match.html"
+              class="project-gallery-item project-media-link"
+              aria-label="View the Movie Match watchlist"
+            >
+              <img
+                src="img/movie-match-watchlist.png"
+                alt="Movie Match persistent watchlist"
+              >
+
+              <span class="project-image-caption">
+                Persistent watchlist
+              </span>
+            </a>
+
+          </div>
+
+        </div>
 
         <div class="project-card-content">
-          <h2>Oscillator Synthesiser Research</h2>
 
-          <p class="project-role">
-            <strong>Role:</strong> Researcher &amp; Developer
-          </p>
+          <h2>Movie Match</h2>
 
-          <p>
-            My MSc thesis project explores audio synthesis and digital signal processing
-            through a comparative study of software synthesiser architectures in C++.
-          </p>
-
-          <p>
-            The project involves developing two oscillator-based synthesisers, designing
-            an A/B testing process, and evaluating the systems through technical analysis
-            and user feedback.
-          </p>
-
-          <div class="project-tags">
-            <span>C++</span>
-            <span>DSP</span>
-            <span>Audio Programming</span>
-            <span>A/B Testing</span>
-            <span>User Evaluation</span>
-            <span>Research</span>
+          <div
+            class="project-meta"
+            aria-label="Movie Match project information"
+          >
+            <span>2026</span>
+            <span>Live</span>
+            <span>Solo Project</span>
+            <span>React Application</span>
           </div>
+
+          <div class="project-detail">
+            <p class="project-detail-label">My contribution</p>
+
+            <p>
+              Product design, React development, API integration,
+              routing, application state, responsive design, and
+              deployment.
+            </p>
+          </div>
+
+          <p class="project-summary">
+            A React application integrating the TMDB API to provide
+            mood-based discovery, dynamic search, filtering, detailed
+            movie pages, trailers, cast information, and persistent
+            watchlists.
+          </p>
+
+          <div class="project-decision">
+            <p class="project-detail-label">Engineering decision</p>
+
+            <p>
+              Used Context API and LocalStorage to maintain a persistent
+              watchlist without requiring users to create an account.
+            </p>
+          </div>
+
+          <ul class="project-highlights project-highlights--compact">
+            <li>
+              Integrated live movie, cast, crew, and trailer data
+            </li>
+
+            <li>
+              Built dynamic search, filtering, and mood-based discovery
+            </li>
+
+            <li>
+              Implemented routed detail pages and persistent watchlists
+            </li>
+
+            <li>
+              Designed an accessible and responsive user interface
+            </li>
+          </ul>
+
+          <div
+            class="project-tags"
+            aria-label="Technologies used for Movie Match"
+          >
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>TMDB API</span>
+            <span>React Router</span>
+            <span>Context API</span>
+            <span>LocalStorage</span>
+            <span>Vite</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="projects/movie-match.html"
+              class="btn"
+            >
+              View Case Study
+            </a>
+
+            <a
+              href="https://stephenlyne62.github.io/movieMatch"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+          </div>
+
         </div>
 
       </article>
