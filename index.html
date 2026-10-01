@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Stephen Lyne | Front-End Developer</title>
+  <title>Stephen Lyne | Software Engineer</title>
 
   <meta
     name="description"
-    content="Portfolio of Stephen Lyne, a front-end developer and MSc Web Development student building accessible web applications, full-stack products, and audio technology projects."
+    content="Portfolio of Stephen Lyne, a software engineer and MSc Web Development graduate specialising in React, TypeScript, full-stack web development, and C++ audio software."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -34,9 +34,17 @@
         </button>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li>
+            <a href="index.html" aria-current="page">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
 
           <li>
             <a
@@ -48,12 +56,15 @@
             </a>
           </li>
 
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
 
       </div>
     </nav>
   </header>
+
 
   <main>
 
@@ -67,16 +78,17 @@
     >
 
       <p class="eyebrow">
-        Front-End Developer · MSc Web Development
+        Software Engineer · MSc Web Development
       </p>
 
       <h1 id="hero-title">Stephen Lyne</h1>
 
       <p>
-        I build accessible web applications with a focus on front-end
-        engineering, modern web technologies, and user-centred design.
-        Alongside web development, I explore audio software through C++
-        and digital signal processing.
+        I'm a software engineer and MSc Web Development graduate specialising
+        in front-end development with React and TypeScript. I build accessible,
+        user-focused web applications and have experience across full-stack
+        development, REST APIs, databases, authentication, and testing.
+        I also develop audio software using C++ and digital signal processing.
       </p>
 
       <ul
@@ -87,7 +99,9 @@
         <li>TypeScript</li>
         <li>JavaScript</li>
         <li>Next.js</li>
-        <li>C++ Audio</li>
+        <li>Node.js</li>
+        <li>SQL</li>
+        <li>C++</li>
         <li>Accessibility</li>
       </ul>
 
@@ -103,7 +117,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          Download CV
+          View CV
         </a>
 
         <a href="contact.html" class="btn">
@@ -113,11 +127,12 @@
       </div>
 
       <p class="hero-availability">
-        MSc Web Development · Available for graduate and junior software
-        engineering opportunities
+        MSc Web Development — Distinction · Available for graduate and
+        junior software engineering opportunities
       </p>
 
     </section>
+
 
     <!-- ==================================================
          FEATURED PROJECT
@@ -130,41 +145,65 @@
 
       <p class="eyebrow">Featured Project</p>
 
-      <h2 id="featured-title">RestBoo</h2>
+      <h2 id="featured-title">World Cup Predictor</h2>
 
       <p class="featured-subtitle">
-        Restaurant Booking &amp; Management Platform
+        Full-Stack Tournament Prediction Platform
       </p>
 
       <p>
-        RestBoo is a restaurant booking and management platform supporting
-        customers, restaurant partners, staff, and administrators through
-        role-based workflows. I delivered the complete front-end
-        implementation, building booking, restaurant management, messaging,
-        analytics, and profile experiences while integrating REST APIs and
-        authentication.
+        A full-stack prediction platform built with Next.js and TypeScript,
+        featuring authentication, fixture management, server-side prediction
+        locking at kickoff, automated scoring, tournament winner predictions,
+        and live leaderboards. Application data is persisted through Supabase
+        and PostgreSQL, with server-side validation used to protect
+        time-sensitive predictions and scoring logic.
       </p>
 
       <ul
         class="project-meta"
-        aria-label="Technologies used for RestBoo"
+        aria-label="Technologies used for World Cup Predictor"
       >
-        <li>Pug</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>Mustache.js</li>
-        <li>Chart.js</li>
-        <li>REST APIs</li>
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Supabase</li>
+        <li>PostgreSQL</li>
         <li>Authentication</li>
+        <li>Server-Side Validation</li>
       </ul>
 
       <div class="project-links">
-        <a href="projects/restboo.html" class="btn">
+
+        <a
+          href="projects/world-cup-predictor.html"
+          class="btn"
+        >
           View Case Study
         </a>
+
+        <a
+          href="https://world-cup-predictor-red-omega.vercel.app/"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live Demo
+        </a>
+
+        <a
+          href="https://github.com/Stephenlyne62/world-cup-predictor"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
       </div>
 
     </section>
+
 
     <!-- ==================================================
          MORE PROJECTS
@@ -181,19 +220,68 @@
 
       <div class="home-project-grid">
 
-        <!-- EDUCATIONAL SOFTWARE SYNTHESIZER -->
+
+        <!-- ==================================================
+             RESTBOO
+             ================================================== -->
+
+        <article class="mini-project-card">
+
+          <h3>RestBoo</h3>
+
+          <p>
+            Restaurant booking and management platform developed as part
+            of a team software engineering project. I delivered the complete
+            front-end implementation, building customer booking flows,
+            restaurant administration, authentication, profile management,
+            analytics dashboards, and responsive interfaces while integrating
+            the application's REST APIs.
+          </p>
+
+          <ul
+            class="project-meta"
+            aria-label="Technologies used for RestBoo"
+          >
+            <li>JavaScript</li>
+            <li>Pug</li>
+            <li>jQuery</li>
+            <li>Mustache.js</li>
+            <li>Chart.js</li>
+            <li>REST APIs</li>
+            <li>Authentication</li>
+          </ul>
+
+          <div class="project-links">
+            <a
+              href="projects/restboo.html"
+              class="btn"
+            >
+              View Case Study
+            </a>
+          </div>
+
+        </article>
+
+
+        <!-- ==================================================
+             EDUCATIONAL SOFTWARE SYNTHESIZER
+             ================================================== -->
 
         <article class="mini-project-card">
 
           <h3>Educational Software Synthesizer</h3>
 
           <p>
-            MSc thesis exploring whether a goal-oriented synthesizer interface can make sound design more accessible to novice users using two interfaces built on a shared C++ DSP engine.
+            MSc thesis project investigating whether interface design can
+            make sound synthesis more accessible to novice users. I designed
+            and implemented two synthesizer interfaces backed by a shared
+            C++ DSP engine, then evaluated them through a comparative user
+            study examining usability and sound-design performance.
           </p>
 
           <ul
             class="project-meta"
-            aria-label="Technologies used for the synthesizer project"
+            aria-label="Technologies and methods used for the synthesizer project"
           >
             <li>C++</li>
             <li>DSP</li>
@@ -203,54 +291,30 @@
           </ul>
 
           <div class="project-links">
-            <a href="projects/synth-thesis.html" class="btn">
+            <a
+              href="projects/synth-thesis.html"
+              class="btn"
+            >
               View Case Study
             </a>
           </div>
 
         </article>
 
-        <!-- WORLD CUP PREDICTOR -->
 
-        <article class="mini-project-card">
-
-          <h3>World Cup Predictor</h3>
-
-          <p>
-            Full-stack tournament prediction platform with authentication,
-            automated scoring, live leaderboards, fixture administration,
-            prediction locking, and database-backed persistence.
-          </p>
-
-          <ul
-            class="project-meta"
-            aria-label="Technologies used for World Cup Predictor"
-          >
-            <li>Next.js</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Supabase</li>
-            <li>PostgreSQL</li>
-          </ul>
-
-          <div class="project-links">
-            <a href="projects/world-cup-predictor.html" class="btn">
-              View Case Study
-            </a>
-          </div>
-
-        </article>
-
-        <!-- MOVIE MATCH -->
+        <!-- ==================================================
+             MOVIE MATCH
+             ================================================== -->
 
         <article class="mini-project-card">
 
           <h3>Movie Match</h3>
 
           <p>
-            React application integrating the TMDB API to deliver mood-based
-            recommendations, dynamic search, detailed movie pages, trailers,
-            cast information, and persistent watchlists.
+            React application integrating the TMDB API to provide mood-based
+            movie recommendations and dynamic search. The application includes
+            detailed movie pages, trailers, cast information, client-side
+            routing, and persistent watchlists stored between sessions.
           </p>
 
           <ul
@@ -265,9 +329,23 @@
           </ul>
 
           <div class="project-links">
-            <a href="projects/movie-match.html" class="btn">
+
+            <a
+              href="projects/movie-match.html"
+              class="btn"
+            >
               View Case Study
             </a>
+
+            <a
+              href="https://stephenlyne62.github.io/movieMatch/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
           </div>
 
         </article>
@@ -277,6 +355,7 @@
     </section>
 
   </main>
+
 
   <footer>
     <p>&copy; 2026 Stephen Lyne</p>
