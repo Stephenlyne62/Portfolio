@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -21,330 +22,233 @@
 
 <body>
 
-<header>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-container">
+  <!-- ==================================================
+       NAVIGATION
+       ================================================== -->
 
-      <a href="../index.html" class="logo">
-        Stephen Lyne
-      </a>
+  <header>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-controls="nav-links"
-        aria-expanded="false"
-        aria-label="Toggle navigation menu"
-      >
-        &#9776;
-      </button>
+    <nav class="navbar" aria-label="Main navigation">
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
+      <div class="nav-container">
 
-        <li>
-          <a href="../projects.html" aria-current="page">
-            Projects
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="../StephenLyneCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CV
-          </a>
-        </li>
-
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-
-    </div>
-  </nav>
-</header>
-
-
-<main>
-
-  <article class="case-study">
-
-    <!-- ==================================================
-         HERO
-         ================================================== -->
-
-    <header class="case-study-hero case-study-hero--stacked">
-
-      <div class="case-study-hero__content">
-
-        <p class="section-label">
-          Solo Full-Stack Project
-        </p>
-
-        <h1>World Cup Predictor</h1>
-
-        <div
-          class="project-meta"
-          aria-label="World Cup Predictor project information"
-        >
-          <span>2026</span>
-          <span>Solo Project</span>
-          <span>Full-Stack Development</span>
-          <span>Live Product</span>
-        </div>
-
-        <p class="case-study-lead">
-          A prediction platform built for the 2026 World Cup, allowing
-          participants to submit score predictions, compete on a live
-          leaderboard, and track tournament outrights through a
-          responsive web application.
-        </p>
-
-        <div class="case-study-actions">
-
-          <a
-            href="https://world-cup-predictor-red-omega.vercel.app/"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Site
-          </a>
-
-          <a
-            href="https://github.com/Stephenlyne62/world-cup-predictor"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View GitHub
-          </a>
-
-        </div>
-
-        <p class="project-repository-note">
-          Designed, developed, and deployed independently using Next.js,
-          TypeScript, Supabase, PostgreSQL, and Vercel.
-        </p>
-
-      </div>
-
-
-      <figure class="case-study-hero__media">
+        <a href="../index.html" class="logo">
+          Stephen Lyne
+        </a>
 
         <button
-          class="case-study-image-button"
+          class="nav-toggle"
           type="button"
-          data-lightbox-image="../img/world-cup-home.png"
-          data-lightbox-alt="World Cup Predictor home page with leaderboard and tournament information"
-          aria-label="Open World Cup Predictor home page screenshot"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
         >
-          <img
-            src="../img/world-cup-home.png"
-            alt="World Cup Predictor home page with leaderboard and tournament information"
-          >
+          &#9776;
         </button>
 
-        <figcaption>
-          Home page and competition overview
-        </figcaption>
+        <ul class="nav-links" id="nav-links">
 
-      </figure>
-
-    </header>
-
-
-    <!-- ==================================================
-         QUICK FACTS
-         ================================================== -->
-
-    <section
-      class="case-study-stats"
-      aria-label="World Cup Predictor project outcomes"
-    >
-
-      <div class="case-study-stat">
-        <strong>104</strong>
-        <span>Fixtures</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>21</strong>
-        <span>Participants</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>5</strong>
-        <span>Outright categories</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>100%</strong>
-        <span>Solo ownership</span>
-      </div>
-
-    </section>
-
-
-    <div class="case-study-body">
-
-      <!-- ==================================================
-           OVERVIEW
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Overview
-        </p>
-
-        <h2>Why I built it</h2>
-
-        <p>
-          World Cup prediction competitions are often managed through
-          spreadsheets, messages, and manual score calculations.
-          As tournaments progress, this becomes difficult to maintain
-          and makes it harder for participants to follow the standings.
-        </p>
-
-        <p>
-          I built a dedicated web application to automate the prediction
-          process, centralise tournament data, and provide a better
-          experience for both participants and organisers.
-        </p>
-
-      </section>
-
-
-      <!-- ==================================================
-           OWNERSHIP
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Ownership
-        </p>
-
-        <h2>What I built</h2>
-
-        <p>
-          I independently designed, developed, tested, and deployed the
-          complete application.
-        </p>
-
-        <ul class="case-study-list">
           <li>
-            Authentication and participant account handling
+            <a href="../index.html">Home</a>
           </li>
 
           <li>
-            Fixture management for all 104 tournament matches
+            <a href="../about.html">About</a>
           </li>
 
           <li>
-            Score prediction creation and editing
+            <a href="../projects.html" aria-current="page">
+              Projects
+            </a>
           </li>
 
           <li>
-            Automatic prediction locking at fixture kick-off
+            <a
+              href="../StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
           </li>
 
           <li>
-            Match scoring and live leaderboard calculation
+            <a href="../contact.html">Contact</a>
           </li>
 
-          <li>
-            Tournament outright predictions and wildcard categories
-          </li>
-
-          <li>
-            Responsive desktop and mobile interfaces
-          </li>
-
-          <li>
-            Deployment and database integration using Vercel and
-            Supabase
-          </li>
         </ul>
 
-      </section>
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ==================================================
+       MAIN
+       ================================================== -->
+
+  <main>
+
+    <article
+      class="
+        case-study
+        case-study--refined
+        case-study--world-cup
+      "
+    >
 
 
       <!-- ==================================================
-           FEATURES
+           HERO
            ================================================== -->
 
-      <section class="case-study-section">
+      <header class="case-study-hero case-study-hero--refined">
 
-        <p class="section-label">
-          Product
-        </p>
+        <div class="case-study-hero__content">
 
-        <h2>Core features</h2>
-
-        <div class="case-study-feature-grid">
-
-          <article class="case-study-feature">
-            <h3>Authentication</h3>
-
-            <p>
-              Participants can access their own predictions and
-              competition data through account-based authentication.
-            </p>
-          </article>
+          <p class="section-label">
+            Solo Full-Stack Project
+          </p>
 
 
-          <article class="case-study-feature">
-            <h3>Fixture predictions</h3>
+          <div class="case-study-title-row">
 
-            <p>
-              Users can submit and update score predictions for all
-              tournament fixtures before kick-off.
-            </p>
-          </article>
+            <h1>
+              World Cup Predictor
+            </h1>
 
 
-          <article class="case-study-feature">
-            <h3>Prediction locking</h3>
+            <div class="case-study-actions">
 
-            <p>
-              Predictions are automatically locked once the relevant
-              fixture begins.
-            </p>
-          </article>
+              <a
+                href="https://world-cup-predictor-red-omega.vercel.app/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Live Site
+              </a>
 
+              <a
+                href="https://github.com/Stephenlyne62/world-cup-predictor"
+                class="btn btn--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub
+              </a>
 
-          <article class="case-study-feature">
-            <h3>Automated scoring</h3>
+            </div>
 
-            <p>
-              Completed fixtures feed into the scoring logic and update
-              the leaderboard.
-            </p>
-          </article>
-
-
-          <article class="case-study-feature">
-            <h3>Tournament outrights</h3>
-
-            <p>
-              Participants can submit winner and wildcard predictions
-              across five outright categories.
-            </p>
-          </article>
+          </div>
 
 
-          <article class="case-study-feature">
-            <h3>Admin controls</h3>
+          <p class="case-study-lead">
+            A full-stack prediction platform built for the 2026 World
+            Cup, combining fixture predictions, automatic locking and
+            scoring, tournament outrights, authentication, and a live
+            competition leaderboard.
+          </p>
 
-            <p>
-              Administrative tools support fixture updates, result
-              entry, and competition maintenance.
-            </p>
-          </article>
+
+          <div
+            class="project-meta"
+            aria-label="World Cup Predictor project information"
+          >
+            <span>2026</span>
+            <span>Solo Project</span>
+            <span>Full-Stack</span>
+            <span>Live Product</span>
+          </div>
+
+        </div>
+
+
+        <figure class="case-study-hero__media">
+
+          <button
+            class="case-study-image-button"
+            type="button"
+            data-lightbox-image="../img/world-cup-home.png"
+            data-lightbox-alt="World Cup Predictor home page with leaderboard and tournament information"
+            aria-label="Open World Cup Predictor home page screenshot"
+          >
+
+            <img
+              src="../img/world-cup-home.png"
+              alt="World Cup Predictor home page with leaderboard and tournament information"
+            >
+
+          </button>
+
+          <figcaption>
+            Competition overview and live leaderboard
+          </figcaption>
+
+        </figure>
+
+      </header>
+
+
+      <!-- ==================================================
+           SNAPSHOT
+           ================================================== -->
+
+      <section
+        class="case-study-snapshot"
+        aria-label="World Cup Predictor project summary"
+      >
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Role
+          </span>
+
+          <strong>
+            Full-Stack Developer
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Core Stack
+          </span>
+
+          <strong>
+            Next.js · TypeScript · Supabase
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Scale
+          </span>
+
+          <strong>
+            104 Fixtures · 21 Participants
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Delivery
+          </span>
+
+          <strong>
+            Live Production Application
+          </strong>
 
         </div>
 
@@ -352,24 +256,136 @@
 
 
       <!-- ==================================================
-           GALLERY
+           PRODUCT / OWNERSHIP
            ================================================== -->
 
-      <section class="case-study-section case-study-section--wide">
+      <section class="case-study-overview">
 
-        <p class="section-label">
-          Interface
-        </p>
+        <div class="case-study-overview__column">
 
-        <h2>Product gallery</h2>
+          <p class="section-label">
+            The Product
+          </p>
 
-        <p>
-          The application combines fixture prediction workflows,
-          leaderboard tracking, and tournament-wide outright
-          predictions.
-        </p>
+          <h2>
+            Replacing spreadsheets<br>
+            with a real application.
+          </h2>
 
-        <div class="case-study-gallery">
+          <p>
+            World Cup prediction competitions are often managed
+            through spreadsheets, messages and manual score
+            calculations.
+          </p>
+
+          <p>
+            I built a dedicated web application to centralise the
+            competition, automate scoring and give participants a
+            single place to submit predictions and follow the
+            standings.
+          </p>
+
+        </div>
+
+
+        <div class="case-study-overview__column">
+
+          <p class="section-label">
+            My Role
+          </p>
+
+          <h2>
+            End-to-end<br>
+            full-stack ownership.
+          </h2>
+
+          <p>
+            I independently designed, developed, tested and deployed
+            the complete application, covering the interface,
+            authentication, database, application logic and
+            production deployment.
+          </p>
+
+          <ul class="case-study-list case-study-list--compact">
+
+            <li>
+              Authentication and participant accounts
+            </li>
+
+            <li>
+              104-fixture tournament data model
+            </li>
+
+            <li>
+              Prediction creation and editing
+            </li>
+
+            <li>
+              Server-side kick-off locking
+            </li>
+
+            <li>
+              Automated scoring and leaderboard logic
+            </li>
+
+            <li>
+              Tournament outright predictions
+            </li>
+
+            <li>
+              Administrative workflows
+            </li>
+
+            <li>
+              Production deployment
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           PRODUCT GALLERY
+           ================================================== -->
+
+      <section class="case-study-section case-study-section--gallery">
+
+        <div class="case-study-section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Interfaces
+            </p>
+
+            <h2>
+              The competition experience
+            </h2>
+
+          </div>
+
+          <p>
+            The application brings fixture predictions, standings and
+            tournament-wide outright selections into one responsive
+            product.
+          </p>
+
+        </div>
+
+
+        <div
+          class="
+            case-study-gallery
+            case-study-gallery--refined
+            case-study-gallery--world-cup
+          "
+        >
+
+
+          <!-- FIXTURES -->
 
           <figure class="case-study-gallery__item">
 
@@ -380,18 +396,23 @@
               data-lightbox-alt="World Cup Predictor fixture prediction interface"
               aria-label="Open fixture prediction interface screenshot"
             >
+
               <img
                 src="../img/world-cup-fixtures.png"
                 alt="World Cup Predictor fixture prediction interface"
               >
+
             </button>
 
             <figcaption>
-              Fixture prediction interface
+              <span>01</span>
+              <strong>Fixture predictions</strong>
             </figcaption>
 
           </figure>
 
+
+          <!-- LEADERBOARD -->
 
           <figure class="case-study-gallery__item">
 
@@ -402,18 +423,23 @@
               data-lightbox-alt="World Cup Predictor live leaderboard"
               aria-label="Open live leaderboard screenshot"
             >
+
               <img
                 src="../img/world-cup-leaderboard.png"
                 alt="World Cup Predictor live leaderboard"
               >
+
             </button>
 
             <figcaption>
-              Live competition leaderboard
+              <span>02</span>
+              <strong>Live leaderboard</strong>
             </figcaption>
 
           </figure>
 
+
+          <!-- OUTRIGHTS -->
 
           <figure class="case-study-gallery__item">
 
@@ -424,14 +450,17 @@
               data-lightbox-alt="World Cup Predictor tournament outright prediction page"
               aria-label="Open tournament outrights screenshot"
             >
+
               <img
                 src="../img/world-cup-outrights.png"
                 alt="World Cup Predictor tournament outright prediction page"
               >
+
             </button>
 
             <figcaption>
-              Tournament outright predictions
+              <span>03</span>
+              <strong>Tournament outrights</strong>
             </figcaption>
 
           </figure>
@@ -445,30 +474,138 @@
            ENGINEERING
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-engineering">
 
-        <p class="section-label">
-          Engineering
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>Technical approach</h2>
+          <div>
 
-        <p>
-          The application was built with Next.js and TypeScript, with
-          Supabase providing authentication and PostgreSQL-backed data
-          storage.
-        </p>
+            <p class="section-label">
+              Engineering
+            </p>
 
-        <p>
-          Reusable components handle fixtures, predictions, leaderboards,
-          navigation, and tournament outrights, while server-side logic
-          manages scoring and competition rules.
-        </p>
+            <h2>
+              How the application connects
+            </h2>
 
-        <p>
-          Prediction availability is determined using each fixture's
-          kick-off time, preventing updates once a match has begun.
-        </p>
+          </div>
+
+          <p>
+            Next.js and TypeScript provide the application layer,
+            while Supabase handles authentication and PostgreSQL-backed
+            data. Server-side logic enforces competition rules and
+            calculates participant scores.
+          </p>
+
+        </div>
+
+
+        <div
+          class="
+            case-study-architecture
+            case-study-architecture--refined
+            case-study-architecture--world-cup
+          "
+          aria-label="World Cup Predictor application architecture"
+        >
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              01
+            </span>
+
+            <strong>
+              Next.js interface
+            </strong>
+
+            <p>
+              Fixtures, predictions, leaderboards, outrights and
+              participant workflows.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              02
+            </span>
+
+            <strong>
+              Authentication + data
+            </strong>
+
+            <p>
+              Supabase authentication with PostgreSQL-backed users,
+              fixtures, predictions and tournament selections.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              03
+            </span>
+
+            <strong>
+              Competition logic
+            </strong>
+
+            <p>
+              Server-side prediction locking, result processing and
+              scoring rules.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              04
+            </span>
+
+            <strong>
+              Live standings
+            </strong>
+
+            <p>
+              Processed results feed participant totals and the
+              competition leaderboard.
+            </p>
+
+          </div>
+
+        </div>
+
 
         <div
           class="case-study-tech"
@@ -489,118 +626,85 @@
 
 
       <!-- ==================================================
-           ARCHITECTURE
+           BUSINESS LOGIC
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-section case-study--scoring">
 
-        <p class="section-label">
-          Architecture
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>Application architecture</h2>
+          <div>
 
-        <div
-          class="case-study-architecture case-study-architecture--five-step"
-          aria-label="World Cup Predictor application architecture"
-        >
+            <p class="section-label">
+              Business Logic
+            </p>
 
-          <div class="architecture-node">
-            <strong>Next.js interface</strong>
+            <h2>
+              Scoring and prediction integrity
+            </h2>
 
-            <span>
-              Fixtures, predictions, leaderboards, outrights, and
-              account screens
-            </span>
           </div>
 
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>Authentication</strong>
-
-            <span>
-              Supabase account and participant access handling
-            </span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>PostgreSQL data</strong>
-
-            <span>
-              Fixtures, users, predictions, results, and tournament
-              selections
-            </span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>Competition logic</strong>
-
-            <span>
-              Prediction locking, scoring rules, and result processing
-            </span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>Leaderboard</strong>
-
-            <span>
-              Updated participant totals and competition standings
-            </span>
-          </div>
+          <p>
+            Predictions remain editable before a fixture begins, then
+            lock against the server-side fixture time. Completed
+            results are processed against saved predictions to update
+            competition standings.
+          </p>
 
         </div>
 
-      </section>
-
-
-      <!-- ==================================================
-           SCORING LOGIC
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Business Logic
-        </p>
-
-        <h2>Prediction scoring</h2>
-
-        <p>
-          Predictions are scored using a simple rule set designed to
-          reward exact predictions while still recognising the correct
-          match outcome.
-        </p>
 
         <div class="case-study-score-grid">
 
           <article class="case-study-score">
-            <strong>3 points</strong>
-            <span>Correct score</span>
+
+            <strong>
+              3
+            </strong>
+
+            <span>
+              points
+            </span>
+
+            <p>
+              Exact score
+            </p>
+
           </article>
 
-          <article class="case-study-score">
-            <strong>1 point</strong>
-            <span>Correct result</span>
-          </article>
 
           <article class="case-study-score">
-            <strong>5 points</strong>
-            <span>Correct outright</span>
+
+            <strong>
+              1
+            </strong>
+
+            <span>
+              point
+            </span>
+
+            <p>
+              Correct result
+            </p>
+
+          </article>
+
+
+          <article class="case-study-score">
+
+            <strong>
+              5
+            </strong>
+
+            <span>
+              points
+            </span>
+
+            <p>
+              Correct outright
+            </p>
+
           </article>
 
         </div>
@@ -612,24 +716,47 @@
            CHALLENGES
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-section case-study-challenges">
 
-        <p class="section-label">
-          Challenges
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>Key engineering challenges</h2>
+          <div>
+
+            <p class="section-label">
+              Challenges
+            </p>
+
+            <h2>
+              Key engineering challenges
+            </h2>
+
+          </div>
+
+          <p>
+            The most important engineering problems centred on
+            protecting prediction integrity, automating competition
+            logic and keeping tournament-scale data manageable.
+          </p>
+
+        </div>
+
 
         <div class="case-study-challenge-grid">
 
           <article class="case-study-challenge">
 
-            <h3>Prediction locking</h3>
+            <span class="challenge-number">
+              01
+            </span>
+
+            <h3>
+              Prediction locking
+            </h3>
 
             <p>
-              Users needed to retain editing access before kick-off
-              while being prevented from changing predictions once a
-              fixture had started.
+              Users needed editing access before kick-off while being
+              prevented from changing predictions once a fixture had
+              started.
             </p>
 
           </article>
@@ -637,12 +764,18 @@
 
           <article class="case-study-challenge">
 
-            <h3>Automated scoring</h3>
+            <span class="challenge-number">
+              02
+            </span>
+
+            <h3>
+              Automated scoring
+            </h3>
 
             <p>
               Match results needed to be compared against saved
-              predictions consistently and reflected accurately in the
-              leaderboard.
+              predictions consistently and reflected accurately in
+              the leaderboard.
             </p>
 
           </article>
@@ -650,11 +783,17 @@
 
           <article class="case-study-challenge">
 
-            <h3>Tournament scale</h3>
+            <span class="challenge-number">
+              03
+            </span>
+
+            <h3>
+              Tournament scale
+            </h3>
 
             <p>
               Supporting 104 fixtures required reusable components,
-              structured data, and manageable filtering across a long
+              structured data and manageable filtering across the
               tournament schedule.
             </p>
 
@@ -663,68 +802,21 @@
 
           <article class="case-study-challenge">
 
-            <h3>Responsive data display</h3>
+            <span class="challenge-number">
+              04
+            </span>
+
+            <h3>
+              Responsive data
+            </h3>
 
             <p>
-              Fixtures, standings, and prediction controls needed to
-              remain clear and usable on smaller screens.
+              Fixtures, standings and prediction controls needed to
+              remain clear and usable across desktop and smaller
+              mobile screens.
             </p>
 
           </article>
-
-        </div>
-
-      </section>
-
-
-      <!-- ==================================================
-           DEPLOYMENT
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Deployment
-        </p>
-
-        <h2>Shipping the application</h2>
-
-        <p>
-          The application is deployed through Vercel, with Supabase
-          providing authentication and PostgreSQL data storage.
-        </p>
-
-        <p>
-          Participants can access the application online, manage their
-          predictions before kick-off, and follow the leaderboard
-          without relying on spreadsheet updates or manual score
-          messages.
-        </p>
-
-        <div class="case-study-deployment-flow">
-
-          <div class="deployment-step">
-            <strong>GitHub</strong>
-            <span>Source control</span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="deployment-step">
-            <strong>Vercel</strong>
-            <span>Application deployment</span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="deployment-step">
-            <strong>Supabase</strong>
-            <span>Authentication and database</span>
-          </div>
 
         </div>
 
@@ -735,165 +827,214 @@
            OUTCOME
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-outcome">
 
         <p class="section-label">
           Outcome
         </p>
 
-        <h2>What the project demonstrates</h2>
+        <h2>
+          What World Cup Predictor demonstrates
+        </h2>
 
-        <p>
-          World Cup Predictor demonstrates my ability to independently
-          deliver a complete full-stack web application from initial
-          idea through database design, implementation, deployment, and
-          active use.
+        <p class="case-study-outcome__statement">
+          End-to-end ownership of a complete full-stack application —
+          from product design and responsive interfaces through
+          authentication, database integration, business logic and
+          production deployment.
         </p>
 
-        <p>
-          It combines responsive front-end development, authentication,
-          database integration, application state, business logic,
-          scoring automation, and production deployment within one
-          coherent product.
+        <p class="case-study-outcome__supporting">
+          The application supports a real competition with 104
+          fixtures and 21 participants, replacing manual prediction
+          tracking and score calculation with a single deployed
+          product.
         </p>
 
       </section>
 
-    </div>
+
+      <!-- ==================================================
+           PAGE NAVIGATION
+           ================================================== -->
+
+      <div class="case-study-footer-actions">
+
+        <a
+          href="synth-thesis.html"
+          class="btn btn--secondary"
+        >
+          ← Previous Case Study
+        </a>
+
+        <a
+          href="emerald-eats.html"
+          class="btn"
+        >
+          Next Case Study →
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
 
 
-    <!-- ==================================================
-         PAGE NAVIGATION
-         ================================================== -->
+  <!-- ==================================================
+       LIGHTBOX
+       ================================================== -->
 
-    <div class="case-study-footer-actions">
-
-      <a
-        href="synth-thesis.html"
-        class="btn"
-      >
-        ← Previous Case Study
-      </a>
-
-      <a
-        href="emerald-eats.html"
-        class="btn"
-      >
-        Next Case Study →
-      </a>
-
-    </div>
-
-  </article>
-
-</main>
-
-
-<!-- ==================================================
-     LIGHTBOX
-     ================================================== -->
-
-<div
-  class="case-study-lightbox"
-  id="case-study-lightbox"
-  role="dialog"
-  aria-modal="true"
-  aria-hidden="true"
-  aria-label="Expanded project screenshot"
->
-
-  <button
-    class="case-study-lightbox__close"
-    type="button"
-    aria-label="Close expanded screenshot"
-  >
-    &times;
-  </button>
-
-  <img
-    class="case-study-lightbox__image"
-    src=""
-    alt=""
+  <div
+    class="case-study-lightbox"
+    id="case-study-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Expanded project screenshot"
   >
 
-</div>
+    <button
+      class="case-study-lightbox__close"
+      type="button"
+      aria-label="Close expanded screenshot"
+    >
+      &times;
+    </button>
+
+    <img
+      class="case-study-lightbox__image"
+      src=""
+      alt=""
+    >
+
+  </div>
 
 
-<footer>
-  <p>&copy; 2026 Stephen Lyne</p>
-</footer>
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+
+  <footer>
+    <p>&copy; 2026 Stephen Lyne</p>
+  </footer>
 
 
-<script>
-  const lightbox = document.getElementById("case-study-lightbox");
+  <!-- ==================================================
+       LIGHTBOX SCRIPT
+       ================================================== -->
 
-  const lightboxImage = lightbox.querySelector(
-    ".case-study-lightbox__image"
-  );
+  <script>
 
-  const closeLightboxButton = lightbox.querySelector(
-    ".case-study-lightbox__close"
-  );
+    const lightbox =
+      document.getElementById("case-study-lightbox");
 
-  const imageButtons = document.querySelectorAll(
-    "[data-lightbox-image]"
-  );
+    const lightboxImage =
+      lightbox.querySelector(".case-study-lightbox__image");
 
-  let lastFocusedElement = null;
+    const closeLightboxButton =
+      lightbox.querySelector(".case-study-lightbox__close");
 
-  function openLightbox(button) {
-    lastFocusedElement = button;
+    const imageButtons =
+      document.querySelectorAll("[data-lightbox-image]");
 
-    lightboxImage.src = button.dataset.lightboxImage;
-    lightboxImage.alt = button.dataset.lightboxAlt || "";
+    let lastFocusedElement = null;
 
-    lightbox.classList.add("is-open");
-    lightbox.setAttribute("aria-hidden", "false");
 
-    document.body.classList.add("lightbox-open");
-    closeLightboxButton.focus();
-  }
+    function openLightbox(button) {
 
-  function closeLightbox() {
-    lightbox.classList.remove("is-open");
-    lightbox.setAttribute("aria-hidden", "true");
+      lastFocusedElement = button;
 
-    lightboxImage.src = "";
-    lightboxImage.alt = "";
+      lightboxImage.src =
+        button.dataset.lightboxImage;
 
-    document.body.classList.remove("lightbox-open");
+      lightboxImage.alt =
+        button.dataset.lightboxAlt || "";
 
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
+      lightbox.classList.add("is-open");
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+      document.body.classList.add(
+        "lightbox-open"
+      );
+
+      closeLightboxButton.focus();
     }
-  }
 
-  imageButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      openLightbox(button);
+
+    function closeLightbox() {
+
+      lightbox.classList.remove(
+        "is-open"
+      );
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+
+      document.body.classList.remove(
+        "lightbox-open"
+      );
+
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+
+
+    imageButtons.forEach((button) => {
+
+      button.addEventListener(
+        "click",
+        () => {
+          openLightbox(button);
+        }
+      );
+
     });
-  });
 
-  closeLightboxButton.addEventListener(
-    "click",
-    closeLightbox
-  );
 
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) {
-      closeLightbox();
-    }
-  });
+    closeLightboxButton.addEventListener(
+      "click",
+      closeLightbox
+    );
 
-  document.addEventListener("keydown", (event) => {
-    if (
-      event.key === "Escape" &&
-      lightbox.classList.contains("is-open")
-    ) {
-      closeLightbox();
-    }
-  });
-</script>
+
+    lightbox.addEventListener(
+      "click",
+      (event) => {
+
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key === "Escape" &&
+          lightbox.classList.contains("is-open")
+        ) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+  </script>
 
 </body>
 </html>

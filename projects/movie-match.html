@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -21,343 +22,213 @@
 
 <body>
 
-<header>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-container">
+  <!-- ==================================================
+       NAVIGATION
+       ================================================== -->
 
-      <a href="../index.html" class="logo">
-        Stephen Lyne
-      </a>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-container">
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-controls="nav-links"
-        aria-expanded="false"
-        aria-label="Toggle navigation menu"
-      >
-        &#9776;
-      </button>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-
-        <li>
-          <a href="../projects.html" aria-current="page">
-            Projects
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="../StephenLyneCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CV
-          </a>
-        </li>
-
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-
-    </div>
-  </nav>
-</header>
-
-
-<main>
-
-  <article class="case-study">
-
-    <!-- ==================================================
-         HERO
-         ================================================== -->
-
-    <header class="case-study-hero case-study-hero--stacked">
-
-      <div class="case-study-hero__content">
-
-        <p class="section-label">
-          Front-End Project
-        </p>
-
-        <h1>Movie Match</h1>
-
-        <div
-          class="project-meta"
-          aria-label="Movie Match project information"
-        >
-          <span>2026</span>
-          <span>Solo Project</span>
-          <span>React Application</span>
-          <span>API Integration</span>
-        </div>
-
-        <p class="case-study-lead">
-          A responsive movie discovery application that helps users
-          browse films by mood and decade, search instantly, explore
-          detailed production information, and save personal watchlists.
-        </p>
-
-        <div class="case-study-actions">
-
-          <a
-            href="https://stephenlyne62.github.io/movieMatch"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Site
-          </a>
-
-          <a
-            href="https://github.com/Stephenlyne62/movieMatch"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View GitHub
-          </a>
-
-        </div>
-
-        <p class="project-repository-note">
-          Designed and developed independently using React, JavaScript,
-          the TMDB API, Context API, routing, and LocalStorage.
-        </p>
-
-      </div>
-
-
-      <figure class="case-study-hero__media">
+        <a href="../index.html" class="logo">
+          Stephen Lyne
+        </a>
 
         <button
-          class="case-study-image-button"
+          class="nav-toggle"
           type="button"
-          data-lightbox-image="../img/movie-match-featured.png"
-          data-lightbox-alt="Movie Match home page displaying movie discovery filters and film cards"
-          aria-label="Open Movie Match home page screenshot"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
         >
-          <img
-            src="../img/movie-match-featured.png"
-            alt="Movie Match home page displaying movie discovery filters and film cards"
-          >
+          &#9776;
         </button>
 
-        <figcaption>
-          Feature Movie
-        </figcaption>
+        <ul class="nav-links" id="nav-links">
 
-      </figure>/
-
-    </header>
-
-
-    <!-- ==================================================
-         QUICK FACTS
-         ================================================== -->
-
-    <section
-      class="case-study-stats"
-      aria-label="Movie Match project details"
-    >
-
-      <div class="case-study-stat">
-        <strong>4</strong>
-        <span>Mood filters</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>5</strong>
-        <span>Decade filters</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>1</strong>
-        <span>External movie API</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>100%</strong>
-        <span>Solo ownership</span>
-      </div>
-
-    </section>
-
-
-    <div class="case-study-body">
-
-      <!-- ==================================================
-           OVERVIEW
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Overview
-        </p>
-
-        <h2>The product idea</h2>
-
-        <p>
-          Many movie platforms prioritise large catalogues and broad
-          genre categories, which can make choosing a film feel more
-          difficult rather than easier.
-        </p>
-
-        <p>
-          Movie Match was designed around a simpler discovery process.
-          Users can begin with a mood, narrow results by decade, search
-          directly for a title, and save films they want to revisit.
-        </p>
-
-      </section>
-
-
-      <!-- ==================================================
-           OWNERSHIP
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Ownership
-        </p>
-
-        <h2>What I built</h2>
-
-        <p>
-          I independently designed and implemented the complete
-          front-end application.
-        </p>
-
-        <ul class="case-study-list">
           <li>
-            Mood-based movie discovery using comedy, thriller, drama,
-            and animation categories
+            <a href="../index.html">Home</a>
           </li>
 
           <li>
-            Decade filtering covering films from the 1980s through the
-            2020s
+            <a href="../about.html">About</a>
           </li>
 
           <li>
-            Instant title search using live TMDB data
+            <a href="../projects.html" aria-current="page">
+              Projects
+            </a>
           </li>
 
           <li>
-            Detailed movie pages with cast, crew, production roles, and
-            ratings
+            <a
+              href="../StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
           </li>
 
           <li>
-            Trailer playback through an in-page modal
+            <a href="../contact.html">Contact</a>
           </li>
 
-          <li>
-            Persistent watchlist functionality using LocalStorage
-          </li>
-
-          <li>
-            Client-side routing and shared application state
-          </li>
-
-          <li>
-            Responsive layouts for desktop, tablet, and mobile screens
-          </li>
         </ul>
 
-      </section>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ==================================================
+       MAIN
+       ================================================== -->
+
+  <main>
+
+    <article class="case-study case-study--refined case-study--movie">
 
 
       <!-- ==================================================
-           FEATURES
+           HERO
            ================================================== -->
 
-      <section class="case-study-section">
+      <header class="case-study-hero case-study-hero--refined">
 
-        <p class="section-label">
-          Product
-        </p>
+        <div class="case-study-hero__content">
 
-        <h2>Core features</h2>
+          <p class="section-label">
+            Front-End Case Study
+          </p>
 
-        <div class="case-study-feature-grid">
+          <div class="case-study-title-row">
 
-          <article class="case-study-feature">
+            <h1>Movie Match</h1>
 
-            <h3>Mood discovery</h3>
+            <div class="case-study-actions">
 
-            <p>
-              Users can explore movies through clear mood-based
-              categories rather than relying only on traditional genre
-              lists.
-            </p>
+              <a
+                href="https://stephenlyne62.github.io/movieMatch"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Live Site
+              </a>
 
-          </article>
+              <a
+                href="https://github.com/Stephenlyne62/movieMatch"
+                class="btn btn--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub
+              </a>
 
+            </div>
 
-          <article class="case-study-feature">
+          </div>
 
-            <h3>Decade filtering</h3>
+          <p class="case-study-lead">
+            A responsive React movie discovery application built around
+            mood and decade filtering, live search, detailed movie data,
+            and a persistent personal watchlist.
+          </p>
 
-            <p>
-              Results can be narrowed by release period, making it
-              easier to explore films from a preferred era.
-            </p>
+          <div
+            class="project-meta"
+            aria-label="Movie Match project information"
+          >
+            <span>2026</span>
+            <span>Solo Project</span>
+            <span>React Application</span>
+          </div>
 
-          </article>
-
-
-          <article class="case-study-feature">
-
-            <h3>Instant search</h3>
-
-            <p>
-              Search results update using live movie data without
-              requiring users to navigate through multiple pages.
-            </p>
-
-          </article>
-
-
-          <article class="case-study-feature">
-
-            <h3>Movie details</h3>
-
-            <p>
-              Dedicated pages present posters, backdrops, cast, crew,
-              trailers, ratings, and production information.
-            </p>
-
-          </article>
+        </div>
 
 
-          <article class="case-study-feature">
+        <figure class="case-study-hero__media">
 
-            <h3>Personal watchlist</h3>
+          <button
+            class="case-study-image-button"
+            type="button"
+            data-lightbox-image="../img/movie-match-featured.png"
+            data-lightbox-alt="Movie Match home page displaying movie discovery filters and film cards"
+            aria-label="Open Movie Match home page screenshot"
+          >
+            <img
+              src="../img/movie-match-featured.png"
+              alt="Movie Match home page displaying movie discovery filters and film cards"
+            >
+          </button>
 
-            <p>
-              Films can be saved locally and remain available across
-              browser sessions.
-            </p>
+          <figcaption>
+            Movie discovery interface
+          </figcaption>
 
-          </article>
+        </figure>
+
+      </header>
 
 
-          <article class="case-study-feature">
+      <!-- ==================================================
+           PROJECT SNAPSHOT
+           ================================================== -->
 
-            <h3>Responsive design</h3>
+      <section
+        class="case-study-snapshot"
+        aria-label="Movie Match project summary"
+      >
 
-            <p>
-              Movie cards, filters, details, and navigation adapt to
-              different screen sizes.
-            </p>
+        <div class="case-study-snapshot__item">
 
-          </article>
+          <span class="snapshot-label">
+            Role
+          </span>
+
+          <strong>
+            Solo Developer
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Core Stack
+          </span>
+
+          <strong>
+            React · JavaScript · TMDB API
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            State
+          </span>
+
+          <strong>
+            Context API · LocalStorage
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Delivery
+          </span>
+
+          <strong>
+            Live Production Site
+          </strong>
 
         </div>
 
@@ -365,23 +236,120 @@
 
 
       <!-- ==================================================
-           GALLERY
+           PRODUCT / OWNERSHIP
            ================================================== -->
 
-      <section class="case-study-section case-study-section--wide">
+      <section class="case-study-overview">
 
-        <p class="section-label">
-          Interface
-        </p>
+        <div class="case-study-overview__column">
 
-        <h2>Product gallery</h2>
+          <p class="section-label">
+            The Product
+          </p>
 
-        <p>
-          The interface moves from broad movie discovery into detailed
-          title information and personal watchlist management.
-        </p>
+          <h2>
+            A simpler way<br>
+            to choose a film.
+          </h2>
 
-        <div class="case-study-gallery">
+          <p>
+            Movie platforms often present users with large catalogues
+            and broad genre categories, making the decision itself
+            harder than it needs to be.
+          </p>
+
+          <p>
+            Movie Match approaches discovery differently. Users can
+            begin with a mood, narrow results by decade, search directly
+            for a title, and save films they want to revisit.
+          </p>
+
+        </div>
+
+
+        <div class="case-study-overview__column">
+
+          <p class="section-label">
+            My Role
+          </p>
+
+          <h2>
+            Designed and built independently.
+          </h2>
+
+          <p>
+            I designed and implemented the complete front-end
+            application, from the discovery experience and movie
+            detail pages through shared state, persistence and
+            responsive behaviour.
+          </p>
+
+          <ul class="case-study-list case-study-list--compact">
+
+            <li>
+              Mood and decade-based movie discovery
+            </li>
+
+            <li>
+              Live title search using TMDB data
+            </li>
+
+            <li>
+              Detailed movie, cast, crew and trailer views
+            </li>
+
+            <li>
+              Persistent personal watchlists
+            </li>
+
+            <li>
+              Client-side routing and shared application state
+            </li>
+
+            <li>
+              Responsive desktop, tablet and mobile layouts
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           INTERFACE GALLERY
+           ================================================== -->
+
+      <section class="case-study-section case-study-section--gallery">
+
+        <div class="case-study-section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Interfaces
+            </p>
+
+            <h2>
+              Product gallery
+            </h2>
+
+          </div>
+
+          <p>
+            The interface moves from broad discovery and filtering
+            into detailed movie information and personal watchlist
+            management.
+          </p>
+
+        </div>
+
+
+        <div class="case-study-gallery case-study-gallery--refined">
+
+
+          <!-- DISCOVERY -->
 
           <figure class="case-study-gallery__item">
 
@@ -392,18 +360,28 @@
               data-lightbox-alt="Movie Match mood and decade filtering interface"
               aria-label="Open Movie Match filtering screenshot"
             >
+
               <img
                 src="../img/movie-match-weekly-picks.png"
                 alt="Movie Match mood and decade filtering interface"
               >
+
             </button>
 
             <figcaption>
-              Weekly Picks Landing Page
+
+              <span>01</span>
+
+              <strong>
+                Discovery &amp; filtering
+              </strong>
+
             </figcaption>
 
           </figure>
 
+
+          <!-- DETAILS -->
 
           <figure class="case-study-gallery__item">
 
@@ -414,18 +392,28 @@
               data-lightbox-alt="Movie Match detailed movie page with cast and production information"
               aria-label="Open Movie Match details page screenshot"
             >
+
               <img
                 src="../img/movie-match-details.png"
                 alt="Movie Match detailed movie page with cast and production information"
               >
+
             </button>
 
             <figcaption>
-              Movie details, cast, and crew
+
+              <span>02</span>
+
+              <strong>
+                Movie details
+              </strong>
+
             </figcaption>
 
           </figure>
 
+
+          <!-- WATCHLIST -->
 
           <figure class="case-study-gallery__item">
 
@@ -436,14 +424,22 @@
               data-lightbox-alt="Movie Match personal watchlist interface"
               aria-label="Open Movie Match watchlist screenshot"
             >
+
               <img
                 src="../img/movie-match-watchlist.png"
                 alt="Movie Match personal watchlist interface"
               >
+
             </button>
 
             <figcaption>
-              Persistent personal watchlist
+
+              <span>03</span>
+
+              <strong>
+                Persistent watchlist
+              </strong>
+
             </figcaption>
 
           </figure>
@@ -457,30 +453,168 @@
            ENGINEERING
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-engineering">
 
-        <p class="section-label">
-          Engineering
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>Technical approach</h2>
+          <div>
 
-        <p>
-          Movie Match was built as a component-based React application.
-          The interface retrieves movie, cast, crew, imagery, and trailer
-          information from the TMDB API.
-        </p>
+            <p class="section-label">
+              Engineering
+            </p>
 
-        <p>
-          Shared state is managed through React Context, allowing
-          watchlist information and application behaviour to remain
-          consistent across pages and components.
-        </p>
+            <h2>
+              How the application works
+            </h2>
 
-        <p>
-          LocalStorage provides lightweight persistence without
-          requiring user accounts or a separate backend service.
-        </p>
+          </div>
+
+          <p>
+            A component-based React interface connects live movie
+            data with shared application state and lightweight
+            browser persistence.
+          </p>
+
+        </div>
+
+
+        <div
+          class="
+            case-study-architecture
+            case-study-architecture--refined
+            case-study-architecture--movie
+          "
+          aria-label="Movie Match application architecture"
+        >
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              01
+            </span>
+
+            <strong>
+              React interface
+            </strong>
+
+            <p>
+              Search, filters, movie cards, detail pages and navigation.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              02
+            </span>
+
+            <strong>
+              TMDB API
+            </strong>
+
+            <p>
+              Movie metadata, imagery, credits, ratings and trailers.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              03
+            </span>
+
+            <strong>
+              Context API
+            </strong>
+
+            <p>
+              Shared watchlist state and application-level behaviour.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              04
+            </span>
+
+            <strong>
+              LocalStorage
+            </strong>
+
+            <p>
+              Persistent watchlist data across browser sessions.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="movie-engineering-detail">
+
+          <div>
+
+            <h3>
+              Working with external data
+            </h3>
+
+            <p>
+              TMDB provides separate datasets for search results,
+              film details, credits, imagery and video content.
+              Movie Match transforms those responses into consistent
+              reusable interface components.
+            </p>
+
+          </div>
+
+          <div>
+
+            <h3>
+              Defensive interface states
+            </h3>
+
+            <p>
+              The application accounts for missing posters,
+              unavailable trailers, incomplete production credits
+              and empty search results so inconsistent API data
+              does not break the user experience.
+            </p>
+
+          </div>
+
+        </div>
+
 
         <div
           class="case-study-tech"
@@ -501,251 +635,109 @@
 
 
       <!-- ==================================================
-           ARCHITECTURE
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Architecture
-        </p>
-
-        <h2>Application flow</h2>
-
-        <div
-          class="case-study-architecture case-study-architecture--movie"
-          aria-label="Movie Match application architecture"
-        >
-
-          <div class="architecture-node">
-
-            <strong>React interface</strong>
-
-            <span>
-              Search, filtering, movie cards, detail pages, and
-              navigation
-            </span>
-
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-
-            <strong>TMDB API</strong>
-
-            <span>
-              Movie metadata, images, credits, ratings, and trailers
-            </span>
-
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-
-            <strong>Context API</strong>
-
-            <span>
-              Shared watchlist state and application-level behaviour
-            </span>
-
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-
-            <strong>LocalStorage</strong>
-
-            <span>
-              Persistent watchlist data across browser sessions
-            </span>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- ==================================================
-           DATA FLOW
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Data
-        </p>
-
-        <h2>Working with external movie data</h2>
-
-        <p>
-          The TMDB API returns large and differently structured datasets
-          for search results, film details, credits, imagery, and video
-          content.
-        </p>
-
-        <p>
-          The application transforms that data into consistent UI
-          components while accounting for missing posters, unavailable
-          trailers, incomplete production credits, and empty results.
-        </p>
-
-        <div class="movie-data-grid">
-
-          <article class="movie-data-card">
-            <strong>Discover</strong>
-            <span>Mood and decade requests</span>
-          </article>
-
-          <article class="movie-data-card">
-            <strong>Search</strong>
-            <span>Live title matching</span>
-          </article>
-
-          <article class="movie-data-card">
-            <strong>Details</strong>
-            <span>Metadata, ratings, and imagery</span>
-          </article>
-
-          <article class="movie-data-card">
-            <strong>Credits</strong>
-            <span>Cast, crew, and producers</span>
-          </article>
-
-          <article class="movie-data-card">
-            <strong>Videos</strong>
-            <span>Trailer discovery and playback</span>
-          </article>
-
-        </div>
-
-      </section>
-
-
-      <!-- ==================================================
            CHALLENGES
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-section case-study-challenges">
 
-        <p class="section-label">
-          Challenges
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>Key engineering challenges</h2>
+          <div>
 
-        <div class="case-study-challenge-grid">
-
-          <article class="case-study-challenge">
-
-            <h3>Combining filters</h3>
-
-            <p>
-              Mood, decade, and search behaviours needed to remain
-              understandable without creating conflicting interface
-              states.
+            <p class="section-label">
+              Challenges
             </p>
 
-          </article>
+            <h2>
+              Key engineering challenges
+            </h2>
 
+          </div>
 
-          <article class="case-study-challenge">
-
-            <h3>API response handling</h3>
-
-            <p>
-              External data could contain missing images, incomplete
-              credits, unavailable trailers, or empty search results.
-            </p>
-
-          </article>
-
-
-          <article class="case-study-challenge">
-
-            <h3>Persistent state</h3>
-
-            <p>
-              Watchlist changes needed to update immediately throughout
-              the application and remain available after the browser was
-              closed.
-            </p>
-
-          </article>
-
-
-          <article class="case-study-challenge">
-
-            <h3>Responsive movie layouts</h3>
-
-            <p>
-              Large backdrops, posters, information panels, and card
-              grids needed to work across a wide range of screen sizes.
-            </p>
-
-          </article>
+          <p>
+            The main challenges came from coordinating filters,
+            handling unpredictable external data and keeping
+            application state consistent.
+          </p>
 
         </div>
 
-      </section>
+
+        <div class="case-study-challenge-grid">
 
 
-      <!-- ==================================================
-           DEPLOYMENT
-           ================================================== -->
+          <article class="case-study-challenge">
 
-      <section class="case-study-section">
+            <span class="challenge-number">
+              01
+            </span>
 
-        <p class="section-label">
-          Deployment
-        </p>
+            <h3>
+              Combining filters
+            </h3>
 
-        <h2>Publishing the application</h2>
+            <p>
+              Mood, decade and search behaviours needed to work
+              together without creating conflicting interface states.
+            </p>
 
-        <p>
-          Movie Match is deployed through GitHub Pages and is publicly
-          accessible as a complete front-end application.
-        </p>
+          </article>
 
-        <p>
-          The project demonstrates how a client-side React application
-          can combine third-party API data, browser storage, routing, and
-          responsive UI without requiring a custom backend.
-        </p>
 
-        <div class="case-study-deployment-flow">
+          <article class="case-study-challenge">
 
-          <div class="deployment-step">
-            <strong>GitHub</strong>
-            <span>Source control</span>
-          </div>
+            <span class="challenge-number">
+              02
+            </span>
 
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
+            <h3>
+              API response handling
+            </h3>
 
-          <div class="deployment-step">
-            <strong>React build</strong>
-            <span>Production application</span>
-          </div>
+            <p>
+              External data could contain missing images, incomplete
+              credits, unavailable trailers or empty search results.
+            </p>
 
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
+          </article>
 
-          <div class="deployment-step">
-            <strong>GitHub Pages</strong>
-            <span>Public deployment</span>
-          </div>
+
+          <article class="case-study-challenge">
+
+            <span class="challenge-number">
+              03
+            </span>
+
+            <h3>
+              Persistent state
+            </h3>
+
+            <p>
+              Watchlist changes needed to update immediately across
+              the application and remain available after the browser
+              was closed.
+            </p>
+
+          </article>
+
+
+          <article class="case-study-challenge">
+
+            <span class="challenge-number">
+              04
+            </span>
+
+            <h3>
+              Responsive layouts
+            </h3>
+
+            <p>
+              Large backdrops, posters, information panels and card
+              grids needed to remain usable across a wide range of
+              screen sizes.
+            </p>
+
+          </article>
 
         </div>
 
@@ -756,164 +748,213 @@
            OUTCOME
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-outcome">
 
         <p class="section-label">
           Outcome
         </p>
 
-        <h2>What the project demonstrates</h2>
+        <h2>
+          What Movie Match demonstrates
+        </h2>
 
-        <p>
-          Movie Match demonstrates my ability to build a complete,
-          responsive React application around a third-party API and turn
-          complex external data into an accessible product experience.
+        <p class="case-study-outcome__statement">
+          Independent delivery of a complete React application —
+          from product design and third-party API integration through
+          shared state, routing, persistence and responsive UI.
         </p>
 
-        <p>
-          The project also demonstrates component-based development,
-          shared state management, client-side routing, browser
-          persistence, defensive API handling, and production
-          deployment.
+        <p class="case-study-outcome__supporting">
+          The project demonstrates my ability to turn complex external
+          data into a usable front-end product, handle inconsistent API
+          responses defensively, and take an application from initial
+          interface design through to public deployment.
         </p>
 
       </section>
 
-    </div>
+
+      <!-- ==================================================
+           PAGE NAVIGATION
+           ================================================== -->
+
+      <div class="case-study-footer-actions">
+
+        <a
+          href="emerald-eats.html"
+          class="btn btn--secondary"
+        >
+          ← Previous Case Study
+        </a>
+
+        <a
+          href="../projects.html"
+          class="btn"
+        >
+          Back to All Projects →
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
 
 
-    <!-- ==================================================
-         PAGE NAVIGATION
-         ================================================== -->
+  <!-- ==================================================
+       LIGHTBOX
+       ================================================== -->
 
-    <div class="case-study-footer-actions">
-
-      <a
-        href="emerald-eats.html"
-        class="btn"
-      >
-        ← Previous Case Study
-      </a>
-
-      <a
-        href="../projects.html"
-        class="btn"
-      >
-        Back to All Projects →
-      </a>
-
-    </div>
-
-  </article>
-
-</main>
-
-
-<!-- ==================================================
-     LIGHTBOX
-     ================================================== -->
-
-<div
-  class="case-study-lightbox"
-  id="case-study-lightbox"
-  role="dialog"
-  aria-modal="true"
-  aria-hidden="true"
-  aria-label="Expanded project screenshot"
->
-
-  <button
-    class="case-study-lightbox__close"
-    type="button"
-    aria-label="Close expanded screenshot"
-  >
-    &times;
-  </button>
-
-  <img
-    class="case-study-lightbox__image"
-    src=""
-    alt=""
+  <div
+    class="case-study-lightbox"
+    id="case-study-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Expanded project screenshot"
   >
 
-</div>
+    <button
+      class="case-study-lightbox__close"
+      type="button"
+      aria-label="Close expanded screenshot"
+    >
+      &times;
+    </button>
+
+    <img
+      class="case-study-lightbox__image"
+      src=""
+      alt=""
+    >
+
+  </div>
 
 
-<footer>
-  <p>&copy; 2026 Stephen Lyne</p>
-</footer>
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+
+  <footer>
+    <p>&copy; 2026 Stephen Lyne</p>
+  </footer>
 
 
-<script>
-  const lightbox = document.getElementById("case-study-lightbox");
+  <!-- ==================================================
+       LIGHTBOX SCRIPT
+       ================================================== -->
 
-  const lightboxImage = lightbox.querySelector(
-    ".case-study-lightbox__image"
-  );
+  <script>
 
-  const closeLightboxButton = lightbox.querySelector(
-    ".case-study-lightbox__close"
-  );
+    const lightbox =
+      document.getElementById("case-study-lightbox");
 
-  const imageButtons = document.querySelectorAll(
-    "[data-lightbox-image]"
-  );
+    const lightboxImage =
+      lightbox.querySelector(".case-study-lightbox__image");
 
-  let lastFocusedElement = null;
+    const closeLightboxButton =
+      lightbox.querySelector(".case-study-lightbox__close");
 
-  function openLightbox(button) {
-    lastFocusedElement = button;
+    const imageButtons =
+      document.querySelectorAll("[data-lightbox-image]");
 
-    lightboxImage.src = button.dataset.lightboxImage;
-    lightboxImage.alt = button.dataset.lightboxAlt || "";
+    let lastFocusedElement = null;
 
-    lightbox.classList.add("is-open");
-    lightbox.setAttribute("aria-hidden", "false");
 
-    document.body.classList.add("lightbox-open");
-    closeLightboxButton.focus();
-  }
+    function openLightbox(button) {
 
-  function closeLightbox() {
-    lightbox.classList.remove("is-open");
-    lightbox.setAttribute("aria-hidden", "true");
+      lastFocusedElement = button;
 
-    lightboxImage.src = "";
-    lightboxImage.alt = "";
+      lightboxImage.src =
+        button.dataset.lightboxImage;
 
-    document.body.classList.remove("lightbox-open");
+      lightboxImage.alt =
+        button.dataset.lightboxAlt || "";
 
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
+      lightbox.classList.add("is-open");
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+      document.body.classList.add(
+        "lightbox-open"
+      );
+
+      closeLightboxButton.focus();
     }
-  }
 
-  imageButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      openLightbox(button);
+
+    function closeLightbox() {
+
+      lightbox.classList.remove(
+        "is-open"
+      );
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+
+      document.body.classList.remove(
+        "lightbox-open"
+      );
+
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+
+
+    imageButtons.forEach((button) => {
+
+      button.addEventListener(
+        "click",
+        () => {
+          openLightbox(button);
+        }
+      );
+
     });
-  });
 
-  closeLightboxButton.addEventListener(
-    "click",
-    closeLightbox
-  );
 
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) {
-      closeLightbox();
-    }
-  });
+    closeLightboxButton.addEventListener(
+      "click",
+      closeLightbox
+    );
 
-  document.addEventListener("keydown", (event) => {
-    if (
-      event.key === "Escape" &&
-      lightbox.classList.contains("is-open")
-    ) {
-      closeLightbox();
-    }
-  });
-</script>
+
+    lightbox.addEventListener(
+      "click",
+      (event) => {
+
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key === "Escape" &&
+          lightbox.classList.contains("is-open")
+        ) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+  </script>
 
 </body>
 </html>

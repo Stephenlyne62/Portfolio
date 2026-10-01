@@ -1,174 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Contact | Stephen Lyne</title>
 
   <meta
     name="description"
-    content="Contact Stephen Lyne to discuss web development projects, collaborations, graduate roles, or junior front-end opportunities."
+    content="Contact Stephen Lyne to discuss software engineering, front-end development, graduate roles, freelance projects, or collaborations."
   >
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+
   <script src="nav.js" defer></script>
   <script src="contact.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-container">
+  <!-- ==================================================
+       NAVIGATION
+       ================================================== -->
 
-      <a href="index.html" class="logo">Stephen Lyne</a>
+  <header>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-controls="nav-links"
-        aria-expanded="false"
-        aria-label="Toggle navigation menu"
-      >
-        &#9776;
-      </button>
+    <nav class="navbar" aria-label="Main navigation">
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li>
-          <a
-            href="StephenLyneCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CV
-          </a>
-        </li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
+      <div class="nav-container">
 
-    </div>
-  </nav>
-</header>
+        <a href="index.html" class="logo">
+          Stephen Lyne
+        </a>
 
-<main>
-  <section class="contact" aria-labelledby="contact-title">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          &#9776;
+        </button>
 
-    <h1 id="contact-title">Contact</h1>
+        <ul class="nav-links" id="nav-links">
 
-    <p class="contact-intro">
-      I'm currently based in Ireland and open to graduate, junior developer,
-      and front-end opportunities across Ireland and the UK.
-    </p>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
 
-    <p class="contact-intro">
-      If you'd like to discuss a role, collaboration, freelance project, or
-      software development opportunity, feel free to send me a message below.
-    </p>
+          <li>
+            <a href="about.html">About</a>
+          </li>
 
-    <p id="form-status" class="contact-status" role="status" aria-live="polite"></p>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
 
-    <form
-      id="contact-form"
-      class="contact-form"
-      action="https://formspree.io/f/xvzgbayg"
-      method="POST"
-      novalidate
+          <li>
+            <a
+              href="StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="contact.html"
+              aria-current="page"
+            >
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ==================================================
+       MAIN
+       ================================================== -->
+
+  <main>
+
+    <section
+      class="contact contact--refined"
+      aria-labelledby="contact-title"
     >
 
-      <div class="field">
-        <label for="name">Name <span aria-hidden="true">*</span></label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          autocomplete="name"
-          required
-          aria-describedby="error-name"
-        >
-        <p class="field-error" id="error-name" aria-live="polite"></p>
+      <div class="contact-layout">
+
+
+        <!-- ==============================================
+             INTRO
+             ============================================== -->
+
+        <div class="contact-content">
+
+          <p class="section-label">
+            Get in touch
+          </p>
+
+          <h1 id="contact-title">
+            Let's build<br>
+            something.
+          </h1>
+
+          <p class="contact-lead">
+            I'm open to graduate and junior software engineering
+            opportunities, front-end roles, collaborations and
+            freelance projects across Ireland and the UK.
+          </p>
+
+          <p class="contact-supporting">
+            If you'd like to discuss a role or project, send me a
+            message and I'll get back to you.
+          </p>
+
+
+          <!-- AVAILABILITY -->
+
+          <div
+            class="contact-availability"
+            aria-label="Availability"
+          >
+
+            <span
+              class="contact-availability__dot"
+              aria-hidden="true"
+            ></span>
+
+            <div>
+
+              <span class="contact-availability__label">
+                Availability
+              </span>
+
+              <strong>
+                Open to opportunities
+              </strong>
+
+              <p>
+                Software engineering · Front-end · Full-stack
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- LINKS -->
+
+          <div
+            class="contact-links"
+            aria-label="Other ways to connect"
+          >
+
+            <a
+              href="https://github.com/Stephenlyne62"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>GitHub</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/stephen-lyne-a07414193/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>LinkedIn</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              href="StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>View CV</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- ==============================================
+             CONTACT FORM
+             ============================================== -->
+
+        <div class="contact-form-panel">
+
+          <div class="contact-form-heading">
+
+            <span>
+              Send a message
+            </span>
+
+          </div>
+
+
+          <p
+            id="form-status"
+            class="contact-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/xvzgbayg"
+            method="POST"
+            novalidate
+          >
+
+
+            <!-- NAME -->
+
+            <div class="field">
+
+              <label for="name">
+                Name
+                <span aria-hidden="true">*</span>
+              </label>
+
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Your name"
+                required
+                aria-describedby="error-name"
+              >
+
+              <p
+                class="field-error"
+                id="error-name"
+                aria-live="polite"
+              ></p>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="field">
+
+              <label for="email">
+                Email
+                <span aria-hidden="true">*</span>
+              </label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+                aria-describedby="error-email"
+              >
+
+              <p
+                class="field-error"
+                id="error-email"
+                aria-live="polite"
+              ></p>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="field">
+
+              <label for="message">
+                Message
+                <span aria-hidden="true">*</span>
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell me about the role or project..."
+                required
+                aria-describedby="error-message"
+              ></textarea>
+
+              <p
+                class="field-error"
+                id="error-message"
+                aria-live="polite"
+              ></p>
+
+            </div>
+
+
+            <!-- HONEYPOT -->
+
+            <input
+              type="text"
+              name="_gotcha"
+              class="sr-only"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            >
+
+
+            <!-- SUBMIT -->
+
+            <button
+              type="submit"
+              class="btn contact-submit"
+            >
+              Send message
+              <span aria-hidden="true">→</span>
+            </button>
+
+          </form>
+
+        </div>
+
       </div>
 
-      <div class="field">
-        <label for="email">Email <span aria-hidden="true">*</span></label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          aria-describedby="error-email"
-        >
-        <p class="field-error" id="error-email" aria-live="polite"></p>
-      </div>
+    </section>
 
-      <div class="field">
-        <label for="message">Message <span aria-hidden="true">*</span></label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          required
-          aria-describedby="error-message"
-        ></textarea>
-        <p class="field-error" id="error-message" aria-live="polite"></p>
-      </div>
+  </main>
 
-      <input
-        type="text"
-        name="_gotcha"
-        class="sr-only"
-        tabindex="-1"
-        autocomplete="off"
-        aria-hidden="true"
-      >
 
-      <button type="submit" class="btn">
-        Send
-      </button>
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
 
-    </form>
-
-    <div class="contact-map" aria-label="Availability section">
-      <h2 class="contact-map-title">Availability</h2>
-
-      <p class="contact-map-text">
-        Available for graduate software engineering, product engineering, front-end, and full-stack development opportunities. Open to remote, hybrid, and relocation-based roles across Ireland and the UK.
-      </p>
-    </div>
-
-    <p class="contact-alt">
-      Prefer links? You can also find me on
-      <a
-        href="https://github.com/Stephenlyne62"
-        class="contact-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >GitHub</a>,
-      <a
-        href="https://www.linkedin.com/in/stephen-lyne-a07414193/"
-        class="contact-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >LinkedIn</a>,
-      or download my
-      <a
-        href="StephenLyneCV.pdf"
-        class="contact-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >CV</a>.
-    </p>
-
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2025 Stephen Lyne</p>
-</footer>
+  <footer>
+    <p>&copy; 2026 Stephen Lyne</p>
+  </footer>
 
 </body>
 </html>

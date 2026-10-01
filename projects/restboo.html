@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -21,267 +22,339 @@
 
 <body>
 
-<header>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-container">
+  <!-- ==================================================
+       NAVIGATION
+       ================================================== -->
 
-      <a href="../index.html" class="logo">
-        Stephen Lyne
-      </a>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-container">
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-controls="nav-links"
-        aria-expanded="false"
-        aria-label="Toggle navigation menu"
-      >
-        &#9776;
-      </button>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-
-        <li>
-          <a href="../projects.html" aria-current="page">
-            Projects
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="../StephenLyneCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CV
-          </a>
-        </li>
-
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-
-    </div>
-  </nav>
-</header>
-
-
-<main>
-
-  <article class="case-study">
-
-    <!-- ==================================================
-         HERO
-         ================================================== -->
-
-    <header class="case-study-hero case-study-hero--stacked">
-
-      <div class="case-study-hero__content">
-
-        <p class="section-label">
-          Featured Case Study
-        </p>
-
-        <h1>RestBoo</h1>
-
-        <div
-          class="project-meta"
-          aria-label="RestBoo project information"
-        >
-          <span>2026</span>
-          <span>Team Project</span>
-          <span>Restaurant Platform</span>
-          <span>Front-End Ownership</span>
-        </div>
-
-        <p class="case-study-lead">
-          A restaurant booking and management platform supporting
-          customers, restaurant partners, staff members, and
-          administrators through one role-based application.
-        </p>
-
-        <div class="case-study-actions">
-
-          <a
-            href="https://github.com/kot-1999/RestB_FE"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View GitHub
-          </a>
-
-          <a
-            href="https://github.com/kot-1999/RestB_FE#readme"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View README
-          </a>
-
-        </div>
-
-        <p class="project-repository-note">
-          Team repository. I owned the complete front-end implementation.
-        </p>
-
-      </div>
-
-
-      <figure class="case-study-hero__media">
+        <a href="../index.html" class="logo">
+          Stephen Lyne
+        </a>
 
         <button
-          class="case-study-image-button"
+          class="nav-toggle"
           type="button"
-          data-lightbox-image="../img/restboo-dashboard.png"
-          data-lightbox-alt="RestBoo restaurant management analytics dashboard"
-          aria-label="Open RestBoo analytics dashboard"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
         >
-          <img
-            src="../img/restboo-dashboard.png"
-            alt="RestBoo restaurant management analytics dashboard"
-          >
+          &#9776;
         </button>
 
-        <figcaption>
-          Restaurant analytics dashboard
-        </figcaption>
+        <ul class="nav-links" id="nav-links">
 
-      </figure>
-
-    </header>
-
-
-    <!-- ==================================================
-         QUICK FACTS
-         ================================================== -->
-
-    <section
-      class="case-study-stats"
-      aria-label="RestBoo project outcomes"
-    >
-
-      <div class="case-study-stat">
-        <strong>4</strong>
-        <span>Role-based interfaces</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>100%</strong>
-        <span>Front-end delivery</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>100%</strong>
-        <span>Front-end ownership</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>1</strong>
-        <span>Integrated product</span>
-      </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         OVERVIEW
-         ================================================== -->
-
-    <div class="case-study-body">
-
-      <section class="case-study-section">
-
-        <p class="section-label">Overview</p>
-
-        <h2>The problem</h2>
-
-        <p>
-          Restaurant booking products must serve several audiences at
-          once. Customers need a clear way to discover restaurants and
-          manage reservations, while restaurant teams need operational
-          tools for bookings, menus, staff, availability, images, and
-          analytics.
-        </p>
-
-        <p>
-          RestBoo brought these workflows into one application while
-          preserving a clear experience for each user type.
-        </p>
-
-      </section>
-
-
-      <!-- ==================================================
-           CONTRIBUTION
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">Contribution</p>
-
-        <h2>What I owned</h2>
-
-        <p>
-          I delivered the complete front end within the project team
-          and translated backend functionality into responsive,
-          role-based user journeys.
-        </p>
-
-        <ul class="case-study-list">
           <li>
-            Customer search, restaurant discovery, detail pages, and
-            booking flows
+            <a href="../index.html">Home</a>
           </li>
 
           <li>
-            Booking management, cancellation, messaging, and user profiles
+            <a href="../about.html">About</a>
           </li>
 
           <li>
-            Restaurant creation, editing, image uploads, gallery
-            management, and staff administration
+            <a href="../projects.html" aria-current="page">
+              Projects
+            </a>
           </li>
 
           <li>
-            Analytics dashboards, restaurant filtering, KPI cards, and
-            chart visualisations
+            <a
+              href="../StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
           </li>
 
           <li>
-            Authentication states, validation, empty states, and API
-            error handling
+            <a href="../contact.html">Contact</a>
           </li>
 
-          <li>
-            Git-based collaboration and front-end integration with the
-            wider team
-          </li>
         </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ==================================================
+       MAIN
+       ================================================== -->
+
+  <main>
+
+    <article class="case-study case-study--refined">
+
+
+      <!-- ==================================================
+           HERO
+           ================================================== -->
+
+      <header class="case-study-hero case-study-hero--refined">
+
+        <div class="case-study-hero__content">
+
+          <p class="section-label">
+            Featured Case Study
+          </p>
+
+          <div class="case-study-title-row">
+
+            <h1>RestBoo</h1>
+
+            <div class="case-study-actions">
+
+              <a
+                href="https://github.com/kot-1999/RestB_FE"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub
+              </a>
+
+              <a
+                href="https://github.com/kot-1999/RestB_FE#readme"
+                class="btn btn--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View README
+              </a>
+
+            </div>
+
+          </div>
+
+          <p class="case-study-lead">
+            A restaurant booking and management platform built around
+            four distinct user roles, combining customer-facing booking
+            experiences with restaurant administration, messaging,
+            analytics, and staff workflows.
+          </p>
+
+          <div
+            class="project-meta"
+            aria-label="RestBoo project information"
+          >
+            <span>2026</span>
+            <span>Team Project</span>
+            <span>Front-End Ownership</span>
+          </div>
+
+        </div>
+
+
+        <figure class="case-study-hero__media">
+
+          <button
+            class="case-study-image-button"
+            type="button"
+            data-lightbox-image="../img/restboo-dashboard.png"
+            data-lightbox-alt="RestBoo restaurant management analytics dashboard"
+            aria-label="Open RestBoo analytics dashboard"
+          >
+            <img
+              src="../img/restboo-dashboard.png"
+              alt="RestBoo restaurant management analytics dashboard"
+            >
+          </button>
+
+          <figcaption>
+            Restaurant analytics dashboard
+          </figcaption>
+
+        </figure>
+
+      </header>
+
+
+      <!-- ==================================================
+           PROJECT SNAPSHOT
+           ================================================== -->
+
+      <section
+        class="case-study-snapshot"
+        aria-label="RestBoo project summary"
+      >
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Role
+          </span>
+
+          <strong>
+            Sole Front-End Developer
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Core Stack
+          </span>
+
+          <strong>
+            Pug · JavaScript · Mustache.js
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Product
+          </span>
+
+          <strong>
+            4 Role-Based Experiences
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Delivery
+          </span>
+
+          <strong>
+            Multi-Developer Team
+          </strong>
+
+        </div>
 
       </section>
 
 
       <!-- ==================================================
-           SCREENSHOT GALLERY
+           PRODUCT / CONTRIBUTION
            ================================================== -->
 
-      <section class="case-study-section case-study-section--wide">
+      <section class="case-study-overview">
 
-        <p class="section-label">Product</p>
+        <div class="case-study-overview__column">
 
-        <h2>Interface gallery</h2>
+          <p class="section-label">
+            The Product
+          </p>
 
-        <p>
-          The application covers customer-facing discovery, booking
-          management, restaurant administration, and analytics.
-        </p>
+          <h2>
+            One platform.<br>
+            Four user experiences.
+          </h2>
 
-        <div class="case-study-gallery">
+          <p>
+            Restaurant booking products need to serve several audiences
+            at once. Customers need simple restaurant discovery and
+            reservation management, while restaurant teams need
+            operational tools for bookings, menus, staff, availability,
+            media, and analytics.
+          </p>
 
-          <figure class="case-study-gallery__item">
+          <p>
+            RestBoo brought those workflows into one application while
+            preserving a clear experience for each type of user.
+          </p>
+
+        </div>
+
+
+        <div class="case-study-overview__column">
+
+          <p class="section-label">
+            My Role
+          </p>
+
+          <h2>
+            Complete front-end ownership.
+          </h2>
+
+          <p>
+            As the sole front-end developer, I delivered the complete
+            user-facing implementation within the project team,
+            translating backend functionality into responsive,
+            role-based user journeys.
+          </p>
+
+          <ul class="case-study-list case-study-list--compact">
+
+            <li>
+              Restaurant discovery and booking flows
+            </li>
+
+            <li>
+              Booking management, messaging, and profiles
+            </li>
+
+            <li>
+              Restaurant and staff administration
+            </li>
+
+            <li>
+              Image upload and gallery management
+            </li>
+
+            <li>
+              Analytics dashboards and data visualisation
+            </li>
+
+            <li>
+              Authentication, validation, and API states
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           INTERFACE GALLERY
+           ================================================== -->
+
+      <section class="case-study-section case-study-section--gallery">
+
+        <div class="case-study-section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Interfaces
+            </p>
+
+            <h2>
+              Interface gallery
+            </h2>
+
+          </div>
+
+          <p>
+            Customer discovery, booking management, restaurant
+            administration, and analytics within one role-based product.
+          </p>
+
+        </div>
+
+
+        <div class="case-study-gallery case-study-gallery--refined">
+
+
+          <!-- RESTAURANT DISCOVERY -->
+
+          <figure
+            class="case-study-gallery__item
+                   case-study-gallery__item--large"
+          >
 
             <button
               class="case-study-image-button"
@@ -290,18 +363,26 @@
               data-lightbox-alt="RestBoo restaurant discovery interface"
               aria-label="Open RestBoo restaurant discovery screenshot"
             >
+
               <img
                 src="../img/restboo-discovery.png"
                 alt="RestBoo restaurant discovery interface"
               >
+
             </button>
 
             <figcaption>
-              Restaurant discovery
+              <span>01</span>
+
+              <strong>
+                Restaurant discovery
+              </strong>
             </figcaption>
 
           </figure>
 
+
+          <!-- BOOKING MANAGEMENT -->
 
           <figure class="case-study-gallery__item">
 
@@ -312,18 +393,26 @@
               data-lightbox-alt="RestBoo booking management and messaging interface"
               aria-label="Open RestBoo booking management screenshot"
             >
+
               <img
                 src="../img/restboo-bookings.png"
                 alt="RestBoo booking management and messaging interface"
               >
+
             </button>
 
             <figcaption>
-              Booking management and messaging
+              <span>02</span>
+
+              <strong>
+                Booking management
+              </strong>
             </figcaption>
 
           </figure>
 
+
+          <!-- RESTAURANT ADMINISTRATION -->
 
           <figure class="case-study-gallery__item">
 
@@ -334,14 +423,20 @@
               data-lightbox-alt="RestBoo restaurant administration interface"
               aria-label="Open RestBoo restaurant administration screenshot"
             >
+
               <img
                 src="../img/restboo-editor.png"
                 alt="RestBoo restaurant administration interface"
               >
+
             </button>
 
             <figcaption>
-              Restaurant administration
+              <span>03</span>
+
+              <strong>
+                Restaurant administration
+              </strong>
             </figcaption>
 
           </figure>
@@ -352,27 +447,106 @@
 
 
       <!-- ==================================================
-           TECHNICAL APPROACH
+           ENGINEERING
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-engineering">
 
-        <p class="section-label">Engineering</p>
+        <div class="case-study-section-heading">
 
-        <h2>Technical approach</h2>
+          <div>
 
-        <p>
-          The front end was built with Pug templates, JavaScript,
-          jQuery, Mustache.js, Chart.js, and REST APIs.
-        </p>
+            <p class="section-label">
+              Engineering
+            </p>
 
-        <p>
-          Mustache.js was used alongside Pug to render dynamic,
-          API-driven content while fitting into the team’s existing
-          architecture. This allowed the application to retain reusable
-          server-rendered layouts while updating interface sections with
-          backend data.
-        </p>
+            <h2>
+              How the front end connected
+            </h2>
+
+          </div>
+
+          <p>
+            The application combined reusable Pug layouts with
+            client-side interaction and API-driven rendering.
+          </p>
+
+        </div>
+
+
+        <div
+          class="case-study-architecture case-study-architecture--refined"
+          aria-label="RestBoo front-end architecture"
+        >
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              01
+            </span>
+
+            <strong>
+              Pug layouts
+            </strong>
+
+            <p>
+              Page structure and reusable server-rendered views.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              02
+            </span>
+
+            <strong>
+              jQuery + Mustache.js
+            </strong>
+
+            <p>
+              Interaction and dynamic rendering of API-driven content.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              03
+            </span>
+
+            <strong>
+              REST APIs
+            </strong>
+
+            <p>
+              Bookings, users, restaurants, messaging, and analytics.
+            </p>
+
+          </div>
+
+        </div>
+
 
         <div
           class="case-study-tech"
@@ -392,100 +566,105 @@
 
 
       <!-- ==================================================
-           ARCHITECTURE
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">Architecture</p>
-
-        <h2>How the front end connected</h2>
-
-        <div
-          class="case-study-architecture"
-          aria-label="RestBoo front-end architecture"
-        >
-
-          <div class="architecture-node">
-            <strong>Pug layouts</strong>
-            <span>Page structure and reusable views</span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>jQuery and Mustache.js</strong>
-            <span>Interaction and dynamic rendering</span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>REST APIs</strong>
-            <span>Bookings, users, restaurants, and analytics</span>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- ==================================================
            CHALLENGES
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-section case-study-challenges">
 
-        <p class="section-label">Challenges</p>
+        <div class="case-study-section-heading">
 
-        <h2>Key engineering challenges</h2>
+          <div>
+
+            <p class="section-label">
+              Challenges
+            </p>
+
+            <h2>
+              Key engineering challenges
+            </h2>
+
+          </div>
+
+          <p>
+            The complexity came from supporting multiple audiences
+            and workflows while keeping the product consistent.
+          </p>
+
+        </div>
+
 
         <div class="case-study-challenge-grid">
 
+
           <article class="case-study-challenge">
-            <h3>Four user roles</h3>
+
+            <span class="challenge-number">
+              01
+            </span>
+
+            <h3>
+              Four user roles
+            </h3>
 
             <p>
-              Each role required different navigation, permissions,
-              workflows, and interface states without making the
-              application feel fragmented.
+              Different navigation, permissions, workflows, and interface
+              states without making the application feel fragmented.
             </p>
+
           </article>
 
 
           <article class="case-study-challenge">
-            <h3>API-driven interfaces</h3>
+
+            <span class="challenge-number">
+              02
+            </span>
+
+            <h3>
+              API-driven interfaces
+            </h3>
 
             <p>
-              The front end needed to handle loading, validation,
-              successful responses, failures, and empty states
-              consistently across many features.
+              Loading, validation, successful responses, failures, and
+              empty states needed consistent handling across features.
             </p>
+
           </article>
 
 
           <article class="case-study-challenge">
-            <h3>Data visualisation</h3>
+
+            <span class="challenge-number">
+              03
+            </span>
+
+            <h3>
+              Data visualisation
+            </h3>
 
             <p>
-              Booking and restaurant performance data had to remain clear
-              across responsive layouts and different restaurant filters.
+              Restaurant and booking performance data needed to remain
+              clear across responsive layouts and changing filters.
             </p>
+
           </article>
 
 
           <article class="case-study-challenge">
-            <h3>Team integration</h3>
+
+            <span class="challenge-number">
+              04
+            </span>
+
+            <h3>
+              Team integration
+            </h3>
 
             <p>
-              Front-end delivery depended on ongoing coordination with
-              backend work, endpoint changes, shared branches, and team
-              deadlines.
+              Front-end delivery required coordination around backend
+              work, endpoint changes, shared branches, and deadlines.
             </p>
+
           </article>
 
         </div>
@@ -497,156 +676,213 @@
            OUTCOME
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-outcome">
 
-        <p class="section-label">Outcome</p>
-
-        <h2>What the project demonstrates</h2>
-
-        <p>
-          RestBoo demonstrates my ability to take ownership of a
-          substantial front end, collaborate in a multi-developer
-          environment, integrate complex APIs, and turn business
-          requirements into a coherent product experience.
+        <p class="section-label">
+          Outcome
         </p>
 
-        <p>
-          It is my strongest evidence of team-based software delivery and
-          front-end ownership across a product with multiple audiences
-          and interconnected workflows.
+        <h2>
+          What RestBoo demonstrates
+        </h2>
+
+        <p class="case-study-outcome__statement">
+          Ownership of a substantial front end — from API integration
+          and role-based workflows through responsive interfaces,
+          analytics, and collaborative software delivery.
+        </p>
+
+        <p class="case-study-outcome__supporting">
+          The project is my strongest example of working within a
+          multi-developer team while taking responsibility for the
+          complete user-facing implementation of an interconnected
+          software product.
         </p>
 
       </section>
 
-    </div>
+
+      <!-- ==================================================
+           NEXT ACTIONS
+           ================================================== -->
+
+      <div class="case-study-footer-actions">
+
+        <a
+          href="../projects.html"
+          class="btn btn--secondary"
+        >
+          ← Back to Projects
+        </a>
+
+        <a
+          href="synth-thesis.html"
+          class="btn"
+        >
+          Next Case Study →
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
 
 
-    <!-- ==================================================
-         NEXT ACTIONS
-         ================================================== -->
+  <!-- ==================================================
+       LIGHTBOX
+       ================================================== -->
 
-    <div class="case-study-footer-actions">
-
-      <a
-        href="../projects.html"
-        class="btn"
-      >
-        ← Back to Projects
-      </a>
-
-      <a
-        href="synth-thesis.html"
-        class="btn"
-      >
-        Next Case Study →
-      </a>
-
-    </div>
-
-  </article>
-
-</main>
-
-
-<!-- ==================================================
-     LIGHTBOX
-     ================================================== -->
-
-<div
-  class="case-study-lightbox"
-  id="case-study-lightbox"
-  role="dialog"
-  aria-modal="true"
-  aria-hidden="true"
-  aria-label="Expanded project screenshot"
->
-
-  <button
-    class="case-study-lightbox__close"
-    type="button"
-    aria-label="Close expanded screenshot"
-  >
-    &times;
-  </button>
-
-  <img
-    class="case-study-lightbox__image"
-    src=""
-    alt=""
+  <div
+    class="case-study-lightbox"
+    id="case-study-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Expanded project screenshot"
   >
 
-</div>
+    <button
+      class="case-study-lightbox__close"
+      type="button"
+      aria-label="Close expanded screenshot"
+    >
+      &times;
+    </button>
+
+    <img
+      class="case-study-lightbox__image"
+      src=""
+      alt=""
+    >
+
+  </div>
 
 
-<footer>
-  <p>&copy; 2026 Stephen Lyne</p>
-</footer>
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+
+  <footer>
+    <p>&copy; 2026 Stephen Lyne</p>
+  </footer>
 
 
-<script>
-  const lightbox = document.getElementById("case-study-lightbox");
-  const lightboxImage = lightbox.querySelector(
-    ".case-study-lightbox__image"
-  );
-  const closeLightboxButton = lightbox.querySelector(
-    ".case-study-lightbox__close"
-  );
-  const imageButtons = document.querySelectorAll(
-    "[data-lightbox-image]"
-  );
+  <!-- ==================================================
+       LIGHTBOX SCRIPT
+       ================================================== -->
 
-  let lastFocusedElement = null;
+  <script>
 
-  function openLightbox(button) {
-    lastFocusedElement = button;
+    const lightbox =
+      document.getElementById("case-study-lightbox");
 
-    lightboxImage.src = button.dataset.lightboxImage;
-    lightboxImage.alt = button.dataset.lightboxAlt || "";
+    const lightboxImage =
+      lightbox.querySelector(".case-study-lightbox__image");
 
-    lightbox.classList.add("is-open");
-    lightbox.setAttribute("aria-hidden", "false");
+    const closeLightboxButton =
+      lightbox.querySelector(".case-study-lightbox__close");
 
-    document.body.classList.add("lightbox-open");
-    closeLightboxButton.focus();
-  }
+    const imageButtons =
+      document.querySelectorAll("[data-lightbox-image]");
 
-  function closeLightbox() {
-    lightbox.classList.remove("is-open");
-    lightbox.setAttribute("aria-hidden", "true");
+    let lastFocusedElement = null;
 
-    lightboxImage.src = "";
-    lightboxImage.alt = "";
 
-    document.body.classList.remove("lightbox-open");
+    function openLightbox(button) {
 
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
+      lastFocusedElement = button;
+
+      lightboxImage.src =
+        button.dataset.lightboxImage;
+
+      lightboxImage.alt =
+        button.dataset.lightboxAlt || "";
+
+      lightbox.classList.add("is-open");
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+      document.body.classList.add(
+        "lightbox-open"
+      );
+
+      closeLightboxButton.focus();
     }
-  }
 
-  imageButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      openLightbox(button);
+
+    function closeLightbox() {
+
+      lightbox.classList.remove(
+        "is-open"
+      );
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+
+      document.body.classList.remove(
+        "lightbox-open"
+      );
+
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+
+
+    imageButtons.forEach((button) => {
+
+      button.addEventListener(
+        "click",
+        () => {
+          openLightbox(button);
+        }
+      );
+
     });
-  });
 
-  closeLightboxButton.addEventListener("click", closeLightbox);
 
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) {
-      closeLightbox();
-    }
-  });
+    closeLightboxButton.addEventListener(
+      "click",
+      closeLightbox
+    );
 
-  document.addEventListener("keydown", (event) => {
-    if (
-      event.key === "Escape" &&
-      lightbox.classList.contains("is-open")
-    ) {
-      closeLightbox();
-    }
-  });
-</script>
+
+    lightbox.addEventListener(
+      "click",
+      (event) => {
+
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key === "Escape" &&
+          lightbox.classList.contains("is-open")
+        ) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+  </script>
 
 </body>
 </html>

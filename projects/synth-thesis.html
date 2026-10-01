@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -23,272 +24,356 @@
 
 <body>
 
-<header>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-container">
+  <!-- ==================================================
+       NAVIGATION
+       ================================================== -->
 
-      <a href="../index.html" class="logo">
-        Stephen Lyne
-      </a>
+  <header>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-controls="nav-links"
-        aria-expanded="false"
-        aria-label="Toggle navigation menu"
-      >
-        &#9776;
-      </button>
+    <nav class="navbar" aria-label="Main navigation">
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
+      <div class="nav-container">
 
-        <li>
-          <a href="../projects.html" aria-current="page">
-            Projects
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="../StephenLyneCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CV
-          </a>
-        </li>
-
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-
-    </div>
-  </nav>
-</header>
-
-
-<main>
-
-  <article class="case-study">
-
-    <!-- ==================================================
-         HERO
-         ================================================== -->
-
-    <header class="case-study-hero case-study-hero--stacked">
-
-      <div class="case-study-hero__content">
-
-        <p class="section-label">
-          MSc Thesis
-        </p>
-
-        <h1>Educational Software Synthesizer</h1>
-
-        <div
-          class="project-meta"
-          aria-label="Educational Software Synthesizer project information"
-        >
-          <span>2026</span>
-          <span>Independent Project</span>
-          <span>C++ and DSP</span>
-          <span>Research and Development</span>
-        </div>
-
-        <p class="case-study-lead">
-          A software synthesizer project investigating whether a
-          goal-oriented interface can make sound synthesis more
-          understandable and usable for novice users.
-        </p>
-
-        <div class="case-study-actions">
-
-          <a
-            href="https://github.com/Stephenlyne62/educational-software-synthesiser"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View GitHub
-          </a>
-
-        </div>
-
-        <p class="project-repository-note">
-          Independently designed, developed, and evaluated as an MSc
-          Web Development thesis project.
-        </p>
-
-      </div>
-
-
-      <figure class="case-study-hero__media">
+        <a href="../index.html" class="logo">
+          Stephen Lyne
+        </a>
 
         <button
-          class="case-study-image-button"
+          class="nav-toggle"
           type="button"
-          data-lightbox-image="../img/thesis-educational-interface.png"
-          data-lightbox-alt="Educational goal-oriented software synthesizer interface"
-          aria-label="Open educational synthesizer interface"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
         >
-          <img
-            src="../img/thesis-educational-interface.png"
-            alt="Educational goal-oriented software synthesizer interface"
-          >
+          &#9776;
         </button>
 
-        <figcaption>
-          Educational goal-oriented interface
-        </figcaption>
+        <ul class="nav-links" id="nav-links">
 
-      </figure>
-
-    </header>
-
-
-    <!-- ==================================================
-         QUICK FACTS
-         ================================================== -->
-
-    <section
-      class="case-study-stats"
-      aria-label="Educational Software Synthesizer project details"
-    >
-
-      <div class="case-study-stat">
-        <strong>2</strong>
-        <span>Interface designs</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>1</strong>
-        <span>Shared DSP engine</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>A/B</strong>
-        <span>Interface comparison</span>
-      </div>
-
-      <div class="case-study-stat">
-        <strong>100%</strong>
-        <span>Independent ownership</span>
-      </div>
-
-    </section>
-
-
-    <div class="case-study-body">
-
-      <!-- ==================================================
-           RESEARCH QUESTION
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Overview
-        </p>
-
-        <h2>The research question</h2>
-
-        <p>
-          Traditional software synthesizers often expose controls
-          through technical concepts such as oscillator shapes,
-          envelopes, filters, modulation, and signal routing.
-        </p>
-
-        <p>
-          Although these controls provide flexibility, novice users may
-          struggle to connect them with the musical result they want to
-          create.
-        </p>
-
-        <p>
-          The project investigates whether presenting equivalent
-          functionality through a more educational and goal-oriented
-          interface can improve usability, confidence, and understanding
-          for novice users.
-        </p>
-
-      </section>
-
-
-      <!-- ==================================================
-           OWNERSHIP
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Ownership
-        </p>
-
-        <h2>What I developed</h2>
-
-        <p>
-          I independently designed and developed two software
-          synthesizer interfaces supported by the same underlying
-          sound-generation system.
-        </p>
-
-        <ul class="case-study-list">
           <li>
-            A conventional synthesizer interface based on familiar
-            technical controls
+            <a href="../index.html">Home</a>
           </li>
 
           <li>
-            An educational interface designed around clearer musical
-            intentions and sound characteristics
+            <a href="../about.html">About</a>
           </li>
 
           <li>
-            A shared object-oriented C++ synthesis and DSP engine
+            <a href="../projects.html" aria-current="page">
+              Projects
+            </a>
           </li>
 
           <li>
-            Oscillator, envelope, filtering, and signal-processing
-            functionality
+            <a
+              href="../StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
           </li>
 
           <li>
-            A controlled comparison designed to isolate interface design
-            as the principal variable
+            <a href="../contact.html">Contact</a>
           </li>
 
-          <li>
-            A user-evaluation process covering usability, confidence,
-            understanding, and task completion
-          </li>
         </ul>
 
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ==================================================
+       MAIN
+       ================================================== -->
+
+  <main>
+
+    <article
+      class="
+        case-study
+        case-study--refined
+        case-study--synth
+      "
+    >
+
+
+      <!-- ==================================================
+           HERO
+           ================================================== -->
+
+      <header class="case-study-hero case-study-hero--refined">
+
+        <div class="case-study-hero__content">
+
+          <p class="section-label">
+            MSc Thesis
+          </p>
+
+
+          <div class="case-study-title-row">
+
+            <h1>
+              Educational Software Synthesizer
+            </h1>
+
+            <div class="case-study-actions">
+
+              <a
+                href="https://github.com/Stephenlyne62/educational-software-synthesiser"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <p class="case-study-lead">
+            An independent C++ audio software project investigating
+            whether a goal-oriented synthesizer interface can make
+            sound synthesis more understandable and usable for
+            novice users.
+          </p>
+
+
+          <div
+            class="project-meta"
+            aria-label="Educational Software Synthesizer project information"
+          >
+            <span>2026</span>
+            <span>Independent Project</span>
+            <span>C++ · DSP</span>
+          </div>
+
+        </div>
+
+
+        <figure class="case-study-hero__media">
+
+          <button
+            class="case-study-image-button"
+            type="button"
+            data-lightbox-image="../img/thesis-educational-interface.png"
+            data-lightbox-alt="Educational goal-oriented software synthesizer interface"
+            aria-label="Open educational synthesizer interface"
+          >
+
+            <img
+              src="../img/thesis-educational-interface.png"
+              alt="Educational goal-oriented software synthesizer interface"
+            >
+
+          </button>
+
+          <figcaption>
+            Educational goal-oriented synthesizer interface
+          </figcaption>
+
+        </figure>
+
+      </header>
+
+
+      <!-- ==================================================
+           SNAPSHOT
+           ================================================== -->
+
+      <section
+        class="case-study-snapshot"
+        aria-label="Educational Software Synthesizer project summary"
+      >
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Role
+          </span>
+
+          <strong>
+            Independent Developer
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Core
+          </span>
+
+          <strong>
+            C++ · DSP · OOP
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Research
+          </span>
+
+          <strong>
+            HCI · Controlled A/B Comparison
+          </strong>
+
+        </div>
+
+
+        <div class="case-study-snapshot__item">
+
+          <span class="snapshot-label">
+            Thesis Result
+          </span>
+
+          <strong>
+            Distinction
+          </strong>
+
+        </div>
+
       </section>
 
 
       <!-- ==================================================
-           PRODUCT GALLERY
+           RESEARCH / OWNERSHIP
            ================================================== -->
 
-      <section class="case-study-section case-study-section--wide">
+      <section class="case-study-overview">
 
-        <p class="section-label">
-          Project
-        </p>
+        <div class="case-study-overview__column">
 
-        <h2>Interfaces and research design</h2>
+          <p class="section-label">
+            Research Question
+          </p>
 
-        <p>
-          Both interfaces provide access to the same synthesis
-          functionality. The visual and interaction design changes,
-          while the underlying audio engine remains consistent.
-        </p>
+          <h2>
+            Can synthesis be<br>
+            easier to understand?
+          </h2>
+
+          <p>
+            Traditional software synthesizers expose sound design
+            through technical concepts such as oscillator shapes,
+            envelopes, filters, modulation and signal routing.
+          </p>
+
+          <p>
+            While these controls provide flexibility, novice users
+            may struggle to connect individual parameters with the
+            musical result they are trying to create.
+          </p>
+
+          <p>
+            The project investigated whether presenting equivalent
+            functionality through a more educational, goal-oriented
+            interface could improve usability, confidence and
+            understanding.
+          </p>
+
+        </div>
+
+
+        <div class="case-study-overview__column">
+
+          <p class="section-label">
+            What I Built
+          </p>
+
+          <h2>
+            Two interfaces.<br>
+            One audio engine.
+          </h2>
+
+          <p>
+            I independently designed and developed two synthesizer
+            interfaces connected to the same underlying C++ sound
+            generation system.
+          </p>
+
+          <ul class="case-study-list case-study-list--compact">
+
+            <li>
+              Conventional technical synthesizer interface
+            </li>
+
+            <li>
+              Goal-oriented educational interface
+            </li>
+
+            <li>
+              Shared object-oriented C++ synthesis engine
+            </li>
+
+            <li>
+              Oscillator, envelope, filtering and DSP functionality
+            </li>
+
+            <li>
+              Controlled interface comparison
+            </li>
+
+            <li>
+              Structured user evaluation
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           INTERFACES / RESEARCH DESIGN
+           ================================================== -->
+
+      <section class="case-study-section case-study-section--gallery">
+
+        <div class="case-study-section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Interfaces
+            </p>
+
+            <h2>
+              Two approaches to the same system
+            </h2>
+
+          </div>
+
+          <p>
+            Both interfaces expose the same synthesis functionality.
+            The interaction model changes while the underlying audio
+            engine remains consistent.
+          </p>
+
+        </div>
+
 
         <div
-          class="case-study-gallery case-study-gallery--two-columns"
+          class="
+            case-study-gallery
+            case-study-gallery--refined
+            case-study-gallery--two-columns
+          "
         >
+
+
+          <!-- EDUCATIONAL INTERFACE -->
 
           <figure class="case-study-gallery__item">
 
@@ -299,18 +384,23 @@
               data-lightbox-alt="Educational goal-oriented software synthesizer interface"
               aria-label="Open educational synthesizer interface"
             >
+
               <img
                 src="../img/thesis-educational-interface.png"
                 alt="Educational goal-oriented software synthesizer interface"
               >
+
             </button>
 
             <figcaption>
-              Educational goal-oriented interface
+              <span>01</span>
+              <strong>Educational interface</strong>
             </figcaption>
 
           </figure>
 
+
+          <!-- CONVENTIONAL INTERFACE -->
 
           <figure class="case-study-gallery__item">
 
@@ -321,18 +411,23 @@
               data-lightbox-alt="Conventional technical software synthesizer interface"
               aria-label="Open conventional synthesizer interface"
             >
+
               <img
                 src="../img/thesis-conventional-interface.png"
                 alt="Conventional technical software synthesizer interface"
               >
+
             </button>
 
             <figcaption>
-              Conventional technical interface
+              <span>02</span>
+              <strong>Conventional interface</strong>
             </figcaption>
 
           </figure>
 
+
+          <!-- ARCHITECTURE -->
 
           <figure class="case-study-gallery__item">
 
@@ -343,18 +438,23 @@
               data-lightbox-alt="Architecture diagram showing two synthesizer interfaces using one shared DSP engine"
               aria-label="Open shared synthesis engine architecture diagram"
             >
+
               <img
                 src="../img/thesis-shared-engine-architecture.png"
                 alt="Architecture diagram showing two synthesizer interfaces using one shared DSP engine"
               >
+
             </button>
 
             <figcaption>
-              Shared synthesis-engine architecture
+              <span>03</span>
+              <strong>Shared engine architecture</strong>
             </figcaption>
 
           </figure>
 
+
+          <!-- EVALUATION -->
 
           <figure class="case-study-gallery__item">
 
@@ -365,14 +465,17 @@
               data-lightbox-alt="Educational Software Synthesizer user evaluation workflow"
               aria-label="Open user evaluation workflow diagram"
             >
+
               <img
                 src="../img/thesis-user-evaluation.png"
                 alt="Educational Software Synthesizer user evaluation workflow"
               >
+
             </button>
 
             <figcaption>
-              Controlled user-evaluation workflow
+              <span>04</span>
+              <strong>User evaluation workflow</strong>
             </figcaption>
 
           </figure>
@@ -386,27 +489,112 @@
            ENGINEERING
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-engineering">
 
-        <p class="section-label">
-          Engineering
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>Technical approach</h2>
+          <div>
 
-        <p>
-          The synthesizer was structured around a shared
-          object-oriented audio engine. Both interfaces communicate with
-          the same DSP components and expose the same underlying
-          functionality.
-        </p>
+            <p class="section-label">
+              Engineering
+            </p>
 
-        <p>
-          Separating the interface layer from the sound-generation
-          system made the comparison more controlled. Differences in
-          participant experience could be examined in relation to the
-          interface design rather than differences in audio capability.
-        </p>
+            <h2>
+              One engine, two experiences
+            </h2>
+
+          </div>
+
+          <p>
+            Separating interface logic from real-time audio processing
+            allowed both versions to provide equivalent synthesis
+            capability while presenting it through different mental
+            models.
+          </p>
+
+        </div>
+
+
+        <div
+          class="
+            case-study-architecture
+            case-study-architecture--refined
+            case-study-architecture--synth
+          "
+          aria-label="Educational Software Synthesizer architecture"
+        >
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              01
+            </span>
+
+            <strong>
+              Interface layer
+            </strong>
+
+            <p>
+              Conventional technical controls or educational,
+              goal-oriented controls.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              02
+            </span>
+
+            <strong>
+              C++ mapping layer
+            </strong>
+
+            <p>
+              Converts interface interaction into common synthesis
+              parameters and object relationships.
+            </p>
+
+          </div>
+
+
+          <div
+            class="architecture-arrow"
+            aria-hidden="true"
+          >
+            →
+          </div>
+
+
+          <div class="architecture-node">
+
+            <span class="architecture-number">
+              03
+            </span>
+
+            <strong>
+              Shared DSP engine
+            </strong>
+
+            <p>
+              Provides identical synthesis and real-time
+              sound-processing functionality to both interfaces.
+            </p>
+
+          </div>
+
+        </div>
+
 
         <div
           class="case-study-tech"
@@ -426,137 +614,50 @@
 
 
       <!-- ==================================================
-           ARCHITECTURE
+           EVALUATION
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-section case-study-evaluation">
 
-        <p class="section-label">
-          Architecture
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>One engine, two experiences</h2>
+          <div>
 
-        <div
-          class="case-study-architecture"
-          aria-label="Educational Software Synthesizer architecture"
-        >
+            <p class="section-label">
+              Evaluation
+            </p>
 
-          <div class="architecture-node">
-            <strong>Conventional interface</strong>
+            <h2>
+              Controlled user testing
+            </h2>
 
-            <span>
-              Technical controls based on familiar synthesizer
-              terminology and parameters
-            </span>
           </div>
 
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>Shared C++ layer</strong>
-
-            <span>
-              Common parameter mapping, object relationships, and
-              interface-to-engine communication
-            </span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>Shared DSP engine</strong>
-
-            <span>
-              Identical synthesis and sound-processing functionality for
-              both interface conditions
-            </span>
-          </div>
+          <p>
+            Novice users completed equivalent synthesis activities
+            using both interfaces so the interaction approaches could
+            be compared under consistent conditions.
+          </p>
 
         </div>
 
-        <div
-          class="case-study-architecture case-study-architecture--reverse"
-          aria-label="Educational interface connection to the shared engine"
-        >
-
-          <div class="architecture-node">
-            <strong>Educational interface</strong>
-
-            <span>
-              Goal-oriented controls designed to connect interface
-              changes with audible outcomes
-            </span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>Shared C++ layer</strong>
-
-            <span>
-              Maps educational controls onto the same underlying
-              synthesis parameters
-            </span>
-          </div>
-
-          <div class="architecture-arrow" aria-hidden="true">
-            →
-          </div>
-
-          <div class="architecture-node">
-            <strong>Shared DSP engine</strong>
-
-            <span>
-              Produces equivalent audio functionality across both
-              interfaces
-            </span>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- ==================================================
-           RESEARCH METHOD
-           ================================================== -->
-
-      <section class="case-study-section">
-
-        <p class="section-label">
-          Research
-        </p>
-
-        <h2>Controlled user evaluation</h2>
-
-        <p>
-          The user evaluation was designed to compare how novice users
-          interacted with the two interface approaches.
-        </p>
-
-        <p>
-          Participants completed equivalent synthesis activities using
-          both interfaces. Their responses could then be compared across
-          usability, confidence, understanding, and their ability to
-          move towards an intended sound.
-        </p>
 
         <div class="case-study-challenge-grid">
 
           <article class="case-study-challenge">
 
-            <h3>Equivalent functionality</h3>
+            <span class="challenge-number">
+              01
+            </span>
+
+            <h3>
+              Equivalent functionality
+            </h3>
 
             <p>
-              Both interface conditions used the same synthesis engine
-              so that the comparison focused on interaction design.
+              Both conditions used the same synthesis engine so the
+              comparison focused on interface design rather than
+              differences in audio capability.
             </p>
 
           </article>
@@ -564,11 +665,18 @@
 
           <article class="case-study-challenge">
 
-            <h3>Novice perspective</h3>
+            <span class="challenge-number">
+              02
+            </span>
+
+            <h3>
+              Novice perspective
+            </h3>
 
             <p>
-              The study focused on how users without extensive synthesis
-              experience understood and approached the controls.
+              The study focused on users without extensive synthesis
+              experience and how they understood and approached the
+              controls.
             </p>
 
           </article>
@@ -576,11 +684,17 @@
 
           <article class="case-study-challenge">
 
-            <h3>Comparable activities</h3>
+            <span class="challenge-number">
+              03
+            </span>
+
+            <h3>
+              Comparable activities
+            </h3>
 
             <p>
-              Participants followed a consistent evaluation process
-              across the two interface conditions.
+              Participants followed a consistent process across both
+              interface conditions to support a meaningful comparison.
             </p>
 
           </article>
@@ -588,11 +702,17 @@
 
           <article class="case-study-challenge">
 
-            <h3>Mixed evidence</h3>
+            <span class="challenge-number">
+              04
+            </span>
+
+            <h3>
+              Mixed evidence
+            </h3>
 
             <p>
-              The evaluation considered participant performance
-              alongside their reported experience and confidence.
+              Evaluation considered participant performance alongside
+              reported usability, confidence and understanding.
             </p>
 
           </article>
@@ -606,23 +726,47 @@
            CHALLENGES
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-section case-study-challenges">
 
-        <p class="section-label">
-          Challenges
-        </p>
+        <div class="case-study-section-heading">
 
-        <h2>Key project challenges</h2>
+          <div>
+
+            <p class="section-label">
+              Challenges
+            </p>
+
+            <h2>
+              Key engineering challenges
+            </h2>
+
+          </div>
+
+          <p>
+            The project required both a reliable real-time audio system
+            and a controlled research design in which interface
+            differences could be evaluated meaningfully.
+          </p>
+
+        </div>
+
 
         <div class="case-study-challenge-grid">
 
           <article class="case-study-challenge">
 
-            <h3>Separating interface and audio logic</h3>
+            <span class="challenge-number">
+              01
+            </span>
+
+            <h3>
+              Separating interface and audio logic
+            </h3>
 
             <p>
-              The software needed a clear boundary between presentation,
-              parameter mapping, and real-time audio processing.
+              The software needed a clear boundary between
+              presentation, parameter mapping and real-time audio
+              processing.
             </p>
 
           </article>
@@ -630,11 +774,17 @@
 
           <article class="case-study-challenge">
 
-            <h3>Maintaining functional equivalence</h3>
+            <span class="challenge-number">
+              02
+            </span>
+
+            <h3>
+              Functional equivalence
+            </h3>
 
             <p>
-              Both interfaces needed to provide comparable capability
-              despite presenting controls through different mental
+              Both interfaces needed comparable capabilities despite
+              presenting synthesis through different interaction
               models.
             </p>
 
@@ -643,11 +793,17 @@
 
           <article class="case-study-challenge">
 
-            <h3>Real-time DSP behaviour</h3>
+            <span class="challenge-number">
+              03
+            </span>
+
+            <h3>
+              Real-time DSP behaviour
+            </h3>
 
             <p>
-              Audio parameters had to respond predictably while
-              preserving stable and continuous sound output.
+              Audio parameters needed to respond predictably while
+              maintaining stable and continuous sound output.
             </p>
 
           </article>
@@ -655,12 +811,18 @@
 
           <article class="case-study-challenge">
 
-            <h3>Designing a valid comparison</h3>
+            <span class="challenge-number">
+              04
+            </span>
+
+            <h3>
+              Designing a valid comparison
+            </h3>
 
             <p>
-              The evaluation needed to minimise unrelated differences
-              between the two conditions and keep the interface as the
-              central variable.
+              Unrelated differences between conditions needed to be
+              minimised so interface design remained the central
+              variable.
             </p>
 
           </article>
@@ -674,165 +836,212 @@
            OUTCOME
            ================================================== -->
 
-      <section class="case-study-section">
+      <section class="case-study-outcome">
 
         <p class="section-label">
           Outcome
         </p>
 
-        <h2>What the project demonstrates</h2>
+        <h2>
+          What the project demonstrates
+        </h2>
 
-        <p>
-          The project demonstrates the ability to design and implement a
-          substantial independent software system combining
-          object-oriented C++, digital signal processing, interface
-          design, and real-time audio programming.
+        <p class="case-study-outcome__statement">
+          Independent development of a substantial software system
+          combining object-oriented C++, real-time DSP, interface
+          design and human-computer interaction.
         </p>
 
-        <p>
-          It also demonstrates research planning, controlled comparison,
-          user-centred product thinking, and the ability to evaluate
-          software rather than treating implementation as the final
-          stage of development.
+        <p class="case-study-outcome__supporting">
+          The thesis also demonstrates research planning, controlled
+          comparison and user-centred evaluation — treating software
+          development as more than implementation alone.
         </p>
 
       </section>
 
-    </div>
+
+      <!-- ==================================================
+           PAGE NAVIGATION
+           ================================================== -->
+
+      <div class="case-study-footer-actions">
+
+        <a
+          href="restboo.html"
+          class="btn btn--secondary"
+        >
+          ← Previous Case Study
+        </a>
+
+        <a
+          href="world-cup-predictor.html"
+          class="btn"
+        >
+          Next Case Study →
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
 
 
-    <!-- ==================================================
-         PAGE NAVIGATION
-         ================================================== -->
+  <!-- ==================================================
+       LIGHTBOX
+       ================================================== -->
 
-    <div class="case-study-footer-actions">
-
-      <a
-        href="restboo.html"
-        class="btn"
-      >
-        ← Previous Case Study
-      </a>
-
-      <a
-        href="world-cup-predictor.html"
-        class="btn"
-      >
-        Next Case Study →
-      </a>
-
-    </div>
-
-  </article>
-
-</main>
-
-
-<!-- ==================================================
-     LIGHTBOX
-     ================================================== -->
-
-<div
-  class="case-study-lightbox"
-  id="case-study-lightbox"
-  role="dialog"
-  aria-modal="true"
-  aria-hidden="true"
-  aria-label="Expanded project image"
->
-
-  <button
-    class="case-study-lightbox__close"
-    type="button"
-    aria-label="Close expanded image"
-  >
-    &times;
-  </button>
-
-  <img
-    class="case-study-lightbox__image"
-    src=""
-    alt=""
+  <div
+    class="case-study-lightbox"
+    id="case-study-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Expanded project image"
   >
 
-</div>
+    <button
+      class="case-study-lightbox__close"
+      type="button"
+      aria-label="Close expanded image"
+    >
+      &times;
+    </button>
+
+    <img
+      class="case-study-lightbox__image"
+      src=""
+      alt=""
+    >
+
+  </div>
 
 
-<footer>
-  <p>&copy; 2026 Stephen Lyne</p>
-</footer>
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+
+  <footer>
+    <p>&copy; 2026 Stephen Lyne</p>
+  </footer>
 
 
-<script>
-  const lightbox = document.getElementById("case-study-lightbox");
+  <!-- ==================================================
+       LIGHTBOX SCRIPT
+       ================================================== -->
 
-  const lightboxImage = lightbox.querySelector(
-    ".case-study-lightbox__image"
-  );
+  <script>
 
-  const closeLightboxButton = lightbox.querySelector(
-    ".case-study-lightbox__close"
-  );
+    const lightbox =
+      document.getElementById("case-study-lightbox");
 
-  const imageButtons = document.querySelectorAll(
-    "[data-lightbox-image]"
-  );
+    const lightboxImage =
+      lightbox.querySelector(".case-study-lightbox__image");
 
-  let lastFocusedElement = null;
+    const closeLightboxButton =
+      lightbox.querySelector(".case-study-lightbox__close");
 
-  function openLightbox(button) {
-    lastFocusedElement = button;
+    const imageButtons =
+      document.querySelectorAll("[data-lightbox-image]");
 
-    lightboxImage.src = button.dataset.lightboxImage;
-    lightboxImage.alt = button.dataset.lightboxAlt || "";
+    let lastFocusedElement = null;
 
-    lightbox.classList.add("is-open");
-    lightbox.setAttribute("aria-hidden", "false");
 
-    document.body.classList.add("lightbox-open");
-    closeLightboxButton.focus();
-  }
+    function openLightbox(button) {
 
-  function closeLightbox() {
-    lightbox.classList.remove("is-open");
-    lightbox.setAttribute("aria-hidden", "true");
+      lastFocusedElement = button;
 
-    lightboxImage.src = "";
-    lightboxImage.alt = "";
+      lightboxImage.src =
+        button.dataset.lightboxImage;
 
-    document.body.classList.remove("lightbox-open");
+      lightboxImage.alt =
+        button.dataset.lightboxAlt || "";
 
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
+      lightbox.classList.add("is-open");
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+      document.body.classList.add(
+        "lightbox-open"
+      );
+
+      closeLightboxButton.focus();
     }
-  }
 
-  imageButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      openLightbox(button);
+
+    function closeLightbox() {
+
+      lightbox.classList.remove(
+        "is-open"
+      );
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+
+      document.body.classList.remove(
+        "lightbox-open"
+      );
+
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+
+
+    imageButtons.forEach((button) => {
+
+      button.addEventListener(
+        "click",
+        () => {
+          openLightbox(button);
+        }
+      );
+
     });
-  });
 
-  closeLightboxButton.addEventListener(
-    "click",
-    closeLightbox
-  );
 
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) {
-      closeLightbox();
-    }
-  });
+    closeLightboxButton.addEventListener(
+      "click",
+      closeLightbox
+    );
 
-  document.addEventListener("keydown", (event) => {
-    if (
-      event.key === "Escape" &&
-      lightbox.classList.contains("is-open")
-    ) {
-      closeLightbox();
-    }
-  });
-</script>
+
+    lightbox.addEventListener(
+      "click",
+      (event) => {
+
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key === "Escape" &&
+          lightbox.classList.contains("is-open")
+        ) {
+          closeLightbox();
+        }
+
+      }
+    );
+
+  </script>
 
 </body>
 </html>

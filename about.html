@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,252 +9,365 @@
 
   <meta
     name="description"
-    content="About Stephen Lyne, a software developer specialising in front-end engineering, accessible web applications, and audio technology."
+    content="About Stephen Lyne, a software engineer with an MSc in Web Development and a background in computing, front-end development, music production, and audio software."
   >
 
   <link rel="stylesheet" href="style.css">
   <script src="nav.js" defer></script>
 </head>
 
+
 <body>
 
-<header>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-container">
+  <!-- ==================================================
+       HEADER
+       ================================================== -->
 
-      <a href="index.html" class="logo">Stephen Lyne</a>
+  <header>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-controls="nav-links"
-        aria-expanded="false"
-        aria-label="Toggle navigation menu"
-      >
-        &#9776;
-      </button>
+    <nav class="navbar" aria-label="Main navigation">
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+      <div class="nav-container">
 
-        <li>
-          <a
-            href="StephenLyneCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+        <a href="index.html" class="logo">
+          Stephen Lyne
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          &#9776;
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html" aria-current="page">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="projects.html">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="StephenLyneCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ==================================================
+       MAIN
+       ================================================== -->
+
+  <main>
+
+    <div class="about-page">
+
+
+      <!-- ==================================================
+           BACKGROUND + EDUCATION
+           ================================================== -->
+
+      <div class="about-content">
+
+
+        <!-- ==================================================
+             STORY
+             ================================================== -->
+
+        <div class="about-story">
+
+
+          <!-- BACKGROUND -->
+
+          <section
+            class="about-section about-section--first"
+            aria-labelledby="background-title"
           >
-            CV
-          </a>
-        </li>
 
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+            <p class="about-label">
+              Background
+            </p>
+
+            <h1
+              class="about-main-title"
+              id="background-title"
+            >
+              From music<br>
+              technology to<br>
+              software
+            </h1>
+
+            <p>
+              My route into software development began with music. I
+              originally studied Music Production, where working with
+              recording technology and digital audio developed my interest
+              in the technical side of creative tools.
+            </p>
+
+            <p>
+              I later moved into computing and web development, building
+              experience across JavaScript, TypeScript, React, databases,
+              APIs, and full-stack applications. What initially started as
+              an interest in building for the web developed into a broader
+              interest in software engineering and product development.
+            </p>
+
+          </section>
+
+
+          <!-- AUDIO SOFTWARE -->
+
+          <section
+            class="about-section"
+            aria-labelledby="audio-title"
+          >
+
+            <p class="about-label">
+              Audio Software
+            </p>
+
+            <h2 id="audio-title">
+              Bringing both sides together
+            </h2>
+
+            <p>
+              My MSc thesis brought my software and music backgrounds
+              together through C++ audio programming and digital signal
+              processing. I developed an educational software synthesizer
+              and explored how interface design could make sound design
+              more accessible to novice users.
+            </p>
+
+            <p>
+              The project combined software engineering, DSP,
+              human-computer interaction, and user evaluation, and the
+              thesis received a distinction.
+            </p>
+
+          </section>
+
+
+          <!-- DEVELOPMENT -->
+
+          <section
+            class="about-section"
+            aria-labelledby="development-title"
+          >
+
+            <p class="about-label">
+              Development
+            </p>
+
+            <h2 id="development-title">
+              Building software around people
+            </h2>
+
+            <p>
+              I'm particularly interested in front-end engineering because
+              it sits at the point where technical decisions directly
+              affect the person using the product. I care about responsive
+              interfaces, accessibility, maintainable code, and making
+              complex functionality feel straightforward.
+            </p>
+
+            <p>
+              At the same time, I'm comfortable working beyond the
+              interface. My projects have involved authentication,
+              databases, REST APIs, server-side logic, testing, and
+              deployment, giving me an understanding of how the wider
+              application fits together.
+            </p>
+
+          </section>
+
+        </div>
+
+
+        <!-- ==================================================
+             EDUCATION
+             ================================================== -->
+
+        <aside
+          class="about-education"
+          aria-labelledby="education-title"
+        >
+
+          <h2 id="education-title">
+            Education
+          </h2>
+
+          <ul class="education-list">
+
+
+            <!-- MSC -->
+
+            <li class="education-item">
+
+              <h3>
+                MSc Web Development
+              </h3>
+
+              <p>
+                University of Roehampton
+              </p>
+
+              <span class="education-result">
+                Thesis — Distinction
+              </span>
+
+            </li>
+
+
+            <!-- HIGHER DIPLOMA -->
+
+            <li class="education-item">
+
+              <h3>
+                Higher Diploma in Science in Computing
+              </h3>
+
+              <p>
+                2021
+              </p>
+
+            </li>
+
+
+            <!-- FRONT-END DIPLOMA -->
+
+            <li class="education-item">
+
+              <h3>
+                Diploma in Front-End Web Development
+              </h3>
+
+              <p>
+                University College Dublin
+              </p>
+
+              <span class="education-result">
+                Merit
+              </span>
+
+            </li>
+
+
+            <!-- MUSIC PRODUCTION -->
+
+            <li class="education-item">
+
+              <h3>
+                BA Music Production
+              </h3>
+
+              <p>
+                2019
+              </p>
+
+            </li>
+
+
+          </ul>
+
+        </aside>
+
+      </div>
+
+
+      <!-- ==================================================
+           WHAT I'M LOOKING FOR
+           ================================================== -->
+
+      <section
+        class="about-looking"
+        aria-labelledby="looking-title"
+      >
+
+        <div>
+
+          <p class="about-label">
+            Next Step
+          </p>
+
+          <h2 id="looking-title">
+            What I'm<br>
+            looking for
+          </h2>
+
+        </div>
+
+
+        <div class="about-looking__text">
+
+          <p>
+            I'm looking for graduate or junior software engineering
+            opportunities where I can contribute to real products, work
+            alongside experienced engineers, and continue developing as
+            a software engineer.
+          </p>
+
+          <p>
+            My strongest interest is in front-end and user-facing
+            development, particularly with React and TypeScript, while
+            I'm also comfortable working across the full stack when
+            required.
+          </p>
+
+        </div>
+
+      </section>
 
     </div>
-  </nav>
-</header>
 
-<main>
+  </main>
 
-<section class="about about--center" aria-labelledby="about-title">
 
-<h1 id="about-title">About Me</h1>
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
 
-<p class="about-intro">
-  I'm Stephen Lyne, a software developer with a background in web development
-  and music technology. I enjoy building accessible, user-centred applications
-  with a particular interest in front-end engineering, modern web technologies,
-  and audio software.
-</p>
-
-<div class="hero-buttons">
-  <a
-    href="StephenLyneCV.pdf"
-    class="btn"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download CV
-  </a>
-</div>
-
-<div class="about-grid">
-
-<!-- ===================================================== -->
-<!-- EDUCATION -->
-<!-- ===================================================== -->
-
-<article class="about-block">
-
-  <div class="about-icon" aria-hidden="true">🎓</div>
-
-  <div>
-
-    <h2>Education</h2>
+  <footer>
 
     <p>
-      I am completing an MSc in Web Development, building on a Higher Diploma
-      in Science in Computing and a Diploma in Front-End Web Development from
-      Griffith College Dublin.
+      &copy; 2026 Stephen Lyne
     </p>
 
-    <p>
-      Earlier, I completed a Bachelor of Arts in Music Production. That
-      background developed the analytical thinking, creativity, and attention
-      to detail that I now apply to software engineering.
-    </p>
-
-  </div>
-
-</article>
-
-<!-- ===================================================== -->
-<!-- TECHNICAL -->
-<!-- ===================================================== -->
-
-<article class="about-block">
-
-  <div class="about-icon" aria-hidden="true">&lt;/&gt;</div>
-
-  <div>
-
-    <h2>Technical Skills</h2>
-
-    <p>
-      My primary focus is front-end development using HTML, CSS, JavaScript,
-      TypeScript and React, with an emphasis on responsive, accessible user
-      interfaces.
-    </p>
-
-    <p>
-      Through academic, freelance, and personal projects I have also worked
-      with Next.js, C++, Python, Java, SQL, REST APIs, Git, relational
-      databases, and full-stack web applications.
-    </p>
-
-    <ul class="skill-tags">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>TypeScript</li>
-      <li>React</li>
-      <li>Next.js</li>
-      <li>Responsive Design</li>
-      <li>Accessibility</li>
-      <li>REST APIs</li>
-      <li>Git</li>
-      <li>SQL</li>
-      <li>Java</li>
-      <li>Python</li>
-      <li>C++</li>
-    </ul>
-
-  </div>
-
-</article>
-
-<!-- ===================================================== -->
-<!-- CURRENT FOCUS -->
-<!-- ===================================================== -->
-
-<article class="about-block">
-
-  <div class="about-icon" aria-hidden="true">🎵</div>
-
-  <div>
-
-    <h2>Current Focus</h2>
-
-    <p>
-      Alongside completing my MSc thesis in C++ audio synthesis and digital
-      signal processing, I continue developing web applications that combine
-      strong engineering with thoughtful user experience.
-    </p>
-
-    <p>
-      Recent work includes a restaurant management platform, a World Cup
-      prediction application, commercial client websites, and React-based
-      applications, while continuing to explore the intersection of software
-      engineering and music technology.
-    </p>
-
-  </div>
-
-</article>
-
-<!-- ===================================================== -->
-<!-- STRENGTHS -->
-<!-- ===================================================== -->
-
-<article class="about-block">
-
-  <div class="about-icon" aria-hidden="true">☆</div>
-
-  <div>
-
-    <h2>Strengths</h2>
-
-    <p>
-      Before moving into software development I worked in high-end hospitality,
-      where I developed communication, professionalism, adaptability, and the
-      ability to perform under pressure.
-    </p>
-
-    <p>
-      Those experiences have helped me collaborate effectively within teams,
-      understand user needs, and approach software development with a strong
-      focus on quality and usability.
-    </p>
-
-  </div>
-
-</article>
-
-<!-- ===================================================== -->
-<!-- WHAT I'M LOOKING FOR -->
-<!-- ===================================================== -->
-
-<article class="about-block">
-
-  <div class="about-icon" aria-hidden="true">💼</div>
-
-  <div>
-
-    <h2>What I'm Looking For</h2>
-
-    <p>
-      I am seeking graduate or junior software engineering opportunities where
-      I can continue building modern web applications, collaborate with
-      experienced developers, and contribute to products used by real people.
-    </p>
-
-    <p>
-      My strongest interest is front-end engineering and user-facing software,
-      while remaining comfortable working across the full stack when required.
-    </p>
-
-  </div>
-
-</article>
-
-</div>
-
-<div class="about-image">
-  <img
-    src="img/StudentIDPic.jpg"
-    alt="Portrait of Stephen Lyne"
-  >
-</div>
-
-</section>
-
-</main>
-
-<footer>
-  <p>&copy; 2026 Stephen Lyne</p>
-</footer>
+  </footer>
 
 </body>
+
 </html>

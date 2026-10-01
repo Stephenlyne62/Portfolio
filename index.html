@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +18,23 @@
 
 <body>
 
+  <!-- ==================================================
+       HEADER
+       ================================================== -->
+
   <header>
+
     <nav class="navbar" aria-label="Main navigation">
+
       <div class="nav-container">
 
-        <a href="index.html" class="logo">Stephen Lyne</a>
+        <a
+          href="index.html"
+          class="logo"
+          aria-current="page"
+        >
+          Stephen Lyne
+        </a>
 
         <button
           class="nav-toggle"
@@ -34,16 +47,17 @@
         </button>
 
         <ul class="nav-links" id="nav-links">
+
           <li>
-            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">
+              About
+            </a>
           </li>
 
           <li>
-            <a href="about.html">About</a>
-          </li>
-
-          <li>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html">
+              Projects
+            </a>
           </li>
 
           <li>
@@ -57,12 +71,17 @@
           </li>
 
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">
+              Contact
+            </a>
           </li>
+
         </ul>
 
       </div>
+
     </nav>
+
   </header>
 
 
@@ -73,132 +92,48 @@
          ================================================== -->
 
     <section
-      class="hero hero--center"
+      class="hero hero--split"
       aria-labelledby="hero-title"
     >
 
-      <p class="eyebrow">
-        Software Engineer · MSc Web Development
-      </p>
+      <!-- LEFT -->
 
-      <h1 id="hero-title">Stephen Lyne</h1>
+      <div class="hero-intro">
 
-      <p>
-        I'm a software engineer and MSc Web Development graduate specialising
-        in front-end development with React and TypeScript. I build accessible,
-        user-focused web applications and have experience across full-stack
-        development, REST APIs, databases, authentication, and testing.
-        I also develop audio software using C++ and digital signal processing.
-      </p>
+        <h1 id="hero-title">
+          Stephen<br>Lyne
+        </h1>
 
-      <ul
-        class="hero-tags"
-        aria-label="Core technologies and areas of focus"
-      >
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>JavaScript</li>
-        <li>Next.js</li>
-        <li>Node.js</li>
-        <li>SQL</li>
-        <li>C++</li>
-        <li>Accessibility</li>
-      </ul>
+        <div class="hero-identity">
 
-      <div class="hero-buttons">
+          <p>
+            Software Engineer
+          </p>
 
-        <a href="projects.html" class="btn">
-          View Projects
-        </a>
+          <p>
+            MSc Web Development
+          </p>
 
-        <a
-          href="StephenLyneCV.pdf"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View CV
-        </a>
-
-        <a href="contact.html" class="btn">
-          Contact Me
-        </a>
+        </div>
 
       </div>
 
-      <p class="hero-availability">
-        MSc Web Development — Distinction · Available for graduate and
-        junior software engineering opportunities
-      </p>
 
-    </section>
+      <!-- RIGHT -->
 
+      <div class="hero-details">
 
-    <!-- ==================================================
-         FEATURED PROJECT
-         ================================================== -->
+        <p class="hero-description">
+          I'm a software engineer specialising in front-end development
+          with React and TypeScript. I build accessible, user-focused web
+          applications with experience across full-stack development,
+          APIs, databases, authentication, and testing.
+        </p>
 
-    <section
-      class="featured-project"
-      aria-labelledby="featured-title"
-    >
-
-      <p class="eyebrow">Featured Project</p>
-
-      <h2 id="featured-title">World Cup Predictor</h2>
-
-      <p class="featured-subtitle">
-        Full-Stack Tournament Prediction Platform
-      </p>
-
-      <p>
-        A full-stack prediction platform built with Next.js and TypeScript,
-        featuring authentication, fixture management, server-side prediction
-        locking at kickoff, automated scoring, tournament winner predictions,
-        and live leaderboards. Application data is persisted through Supabase
-        and PostgreSQL, with server-side validation used to protect
-        time-sensitive predictions and scoring logic.
-      </p>
-
-      <ul
-        class="project-meta"
-        aria-label="Technologies used for World Cup Predictor"
-      >
-        <li>Next.js</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Supabase</li>
-        <li>PostgreSQL</li>
-        <li>Authentication</li>
-        <li>Server-Side Validation</li>
-      </ul>
-
-      <div class="project-links">
-
-        <a
-          href="projects/world-cup-predictor.html"
-          class="btn"
-        >
-          View Case Study
-        </a>
-
-        <a
-          href="https://world-cup-predictor-red-omega.vercel.app/"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Demo
-        </a>
-
-        <a
-          href="https://github.com/Stephenlyne62/world-cup-predictor"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+        <p class="hero-description hero-description--secondary">
+          My work also extends into audio software, combining my background
+          in music technology with C++ and digital signal processing.
+        </p>
 
       </div>
 
@@ -206,149 +141,107 @@
 
 
     <!-- ==================================================
-         MORE PROJECTS
+         TECHNOLOGIES
          ================================================== -->
 
     <section
-      class="home-projects"
-      aria-labelledby="projects-preview-title"
+      class="technologies"
+      aria-labelledby="technologies-title"
     >
 
-      <p class="eyebrow">Selected Work</p>
+      <div class="technologies-inner">
 
-      <h2 id="projects-preview-title">More Projects</h2>
+        <div class="technologies-heading">
 
-      <div class="home-project-grid">
-
-
-        <!-- ==================================================
-             RESTBOO
-             ================================================== -->
-
-        <article class="mini-project-card">
-
-          <h3>RestBoo</h3>
-
-          <p>
-            Restaurant booking and management platform developed as part
-            of a team software engineering project. I delivered the complete
-            front-end implementation, building customer booking flows,
-            restaurant administration, authentication, profile management,
-            analytics dashboards, and responsive interfaces while integrating
-            the application's REST APIs.
+          <p class="eyebrow">
+            Technical Skills
           </p>
 
-          <ul
-            class="project-meta"
-            aria-label="Technologies used for RestBoo"
-          >
-            <li>JavaScript</li>
-            <li>Pug</li>
-            <li>jQuery</li>
-            <li>Mustache.js</li>
-            <li>Chart.js</li>
-            <li>REST APIs</li>
-            <li>Authentication</li>
-          </ul>
-
-          <div class="project-links">
-            <a
-              href="projects/restboo.html"
-              class="btn"
-            >
-              View Case Study
-            </a>
-          </div>
-
-        </article>
+        </div>
 
 
-        <!-- ==================================================
-             EDUCATIONAL SOFTWARE SYNTHESIZER
-             ================================================== -->
+        <div class="technology-grid">
 
-        <article class="mini-project-card">
+          <!-- LANGUAGES -->
 
-          <h3>Educational Software Synthesizer</h3>
+          <div class="technology-group">
 
-          <p>
-            MSc thesis project investigating whether interface design can
-            make sound synthesis more accessible to novice users. I designed
-            and implemented two synthesizer interfaces backed by a shared
-            C++ DSP engine, then evaluated them through a comparative user
-            study examining usability and sound-design performance.
-          </p>
+            <h3>
+              Languages
+            </h3>
 
-          <ul
-            class="project-meta"
-            aria-label="Technologies and methods used for the synthesizer project"
-          >
-            <li>C++</li>
-            <li>DSP</li>
-            <li>Audio Programming</li>
-            <li>HCI</li>
-            <li>User Testing</li>
-          </ul>
-
-          <div class="project-links">
-            <a
-              href="projects/synth-thesis.html"
-              class="btn"
-            >
-              View Case Study
-            </a>
-          </div>
-
-        </article>
-
-
-        <!-- ==================================================
-             MOVIE MATCH
-             ================================================== -->
-
-        <article class="mini-project-card">
-
-          <h3>Movie Match</h3>
-
-          <p>
-            React application integrating the TMDB API to provide mood-based
-            movie recommendations and dynamic search. The application includes
-            detailed movie pages, trailers, cast information, client-side
-            routing, and persistent watchlists stored between sessions.
-          </p>
-
-          <ul
-            class="project-meta"
-            aria-label="Technologies used for Movie Match"
-          >
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>TMDB API</li>
-            <li>React Router</li>
-            <li>LocalStorage</li>
-          </ul>
-
-          <div class="project-links">
-
-            <a
-              href="projects/movie-match.html"
-              class="btn"
-            >
-              View Case Study
-            </a>
-
-            <a
-              href="https://stephenlyne62.github.io/movieMatch/"
-              class="btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
+            <ul>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+              <li>SQL</li>
+            </ul>
 
           </div>
 
-        </article>
+
+          <!-- WEB -->
+
+          <div class="technology-group">
+
+            <h3>
+              Web
+            </h3>
+
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>REST APIs</li>
+            </ul>
+
+          </div>
+
+
+          <!-- DATA & TOOLS -->
+
+          <div class="technology-group">
+
+            <h3>
+              Data &amp; Tools
+            </h3>
+
+            <ul>
+              <li>Git</li>
+              <li>Docker</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>Supabase</li>
+              <li>Prisma</li>
+            </ul>
+
+          </div>
+
+
+          <!-- PRACTICES -->
+
+          <div class="technology-group">
+
+            <h3>
+              Practices
+            </h3>
+
+            <ul>
+              <li>Testing</li>
+              <li>Accessibility</li>
+              <li>Responsive Design</li>
+              <li>Authentication</li>
+              <li>API Integration</li>
+            </ul>
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -357,9 +250,18 @@
   </main>
 
 
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+
   <footer>
-    <p>&copy; 2026 Stephen Lyne</p>
+
+    <p>
+      &copy; 2026 Stephen Lyne
+    </p>
+
   </footer>
 
 </body>
+
 </html>
