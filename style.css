@@ -7351,3 +7351,167 @@ figcaption strong {
     border-top: 1px solid rgba(196, 181, 253, 0.14);
   }
 }
+/* ==================================================
+   COLOUR REFINEMENT
+   Deeper navy, softer slate, clearer accents
+================================================== */
+
+:root {
+  --accent-purple: #86a9cf;
+  --accent-purple-soft: rgba(134, 169, 207, 0.10);
+  --accent-purple-border: rgba(134, 169, 207, 0.22);
+  --accent-purple-hover: rgba(134, 169, 207, 0.16);
+
+  --accent-cyan: #82b9c5;
+  --accent-cyan-soft: rgba(130, 185, 197, 0.08);
+}
+
+
+/* BACKGROUND */
+
+body {
+  background:
+    radial-gradient(
+      900px 560px at 12% 0%,
+      rgba(74, 102, 177, 0.16),
+      transparent 62%
+    ),
+    radial-gradient(
+      720px 500px at 92% 12%,
+      rgba(72, 137, 158, 0.08),
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      #080c13 0%,
+      #0b111b 52%,
+      #101827 100%
+    );
+}
+
+
+/* NAV */
+
+.navbar {
+  background: rgba(10, 16, 26, 0.78);
+  border-color: rgba(185, 205, 240, 0.09);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.logo:hover {
+  color: #c2d0ff;
+}
+
+
+/* MAIN DISPLAY TITLE — ICE BLUE */
+
+.home-name,
+.hero-name,
+.home-hero h1 {
+  background: linear-gradient(
+    100deg,
+    #ffffff 0%,
+    #e8eef8 42%,
+    #b9cbe6 70%,
+    #7fa9c7 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* EYEBROWS / SECTION LABELS */
+
+.eyebrow,
+.project-label,
+.section-label {
+  color: #9bb9dc;
+}
+
+
+/* LINKS */
+
+.contact-link {
+  color: #a9bdf3;
+}
+
+.contact-link:hover {
+  color: #d8e1fa;
+}
+
+
+/* CARDS */
+
+.project-card,
+.featured-project,
+.mini-project-card,
+.about-grid,
+.contact-form,
+.contact-map {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24, 34, 51, 0.78),
+      rgba(13, 20, 32, 0.78)
+    );
+  border-color: rgba(190, 208, 238, 0.085);
+}
+
+
+/* PROJECT HOVER */
+
+.project-card:hover,
+.mini-project-card:hover {
+  border-color: rgba(142, 167, 242, 0.34);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.28),
+    0 0 0 1px rgba(142, 167, 242, 0.055),
+    0 0 28px rgba(82, 123, 190, 0.06);
+}
+
+
+/* TAGS */
+
+.skill-tags li,
+.hero-tags li,
+.project-tags span {
+  background: linear-gradient(
+    135deg,
+    rgba(142, 167, 242, 0.11),
+    rgba(130, 200, 214, 0.055)
+  );
+  border-color: rgba(142, 167, 242, 0.2);
+  color: #bdcaf0;
+}
+
+
+/* PROJECT DECISION / ARCHITECTURE ACCENTS */
+
+.project-decision {
+  border-left-color: rgba(142, 167, 242, 0.62);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(142, 167, 242, 0.09),
+      rgba(142, 167, 242, 0.025)
+    );
+}
+
+.architecture-node {
+  border-color: rgba(142, 167, 242, 0.22);
+  background: rgba(142, 167, 242, 0.065);
+}
+
+
+/* PRIORITY PROJECT */
+
+.project-card--priority {
+  border-color: rgba(142, 167, 242, 0.3);
+
+  box-shadow:
+    0 22px 55px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(142, 167, 242, 0.05),
+    0 0 34px rgba(79, 116, 181, 0.07);
+}
